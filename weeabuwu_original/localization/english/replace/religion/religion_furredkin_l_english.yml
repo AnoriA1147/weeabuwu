@@ -1,0 +1,115 @@
+l_english:
+# l_spanish:
+# l_german:
+# l_french:
+# l_russian:
+# l_simp_chinese:
+# l_korean:
+
+ #Furry Religion
+ furredkin_religion:0 "Furredkin"
+ furredkin_religion_adj:0 "Furred"
+ furredkin_religion_adherent:0 "Furry"
+ furredkin_religion_adherent_plural:0 "Furries"
+ furredkin_religion_desc:0 "Along the shores of the Great Lakes, from the decimation of the [Concept('the_event_ate','Event')|E], emerged the Lacustrine traditions. These faiths view fluidity as the central concept binding their religions together, like the eternal, but ever changing waves upon a beach. For as long as water and blood flow in a neverending cycle, so too shall time."
+
+ #Califur
+ furry: "Californine Kindred"
+ furry_adj: "Califurred"
+ furry_adherent: "Califurry"
+ furry_adherent_plural: "Califurries"
+ furry_desc: "The Lakeshore faithful believe that existence is dictated by a series of heavily intertwined and complex cycles, chief among them the process of love and anger which the water of the Lakes undergoes. Over the course of a year, she will cycle between being the Lady or the Witch, both giving and taking life as effortlessly as the waves cresting upon the shore, depending on her mood. Lakefolk see everything as having a spirit, and they revere many in their large cosmology. However, the greatest among them is Polaris, the Great Keeper-Spirit who remains everlasting across every cycle. Responsible for bestowing the gift of Eternal Light upon the world, Polaris will always try to guide adherents safely to their destinations, despite all the turmoil which the living must undoubtedly face."
+
+ #High, Household, hearth
+ furry_skiltaire: "two Saints Skiltaire"
+ furry_skiltaire_possessive: "the Skiltaire's"
+ #Creator, childcare
+ furry_creator: "Amalthea" #last unicorn, greek goat
+ furry_creator_possessive: "Amaltheas"
+ #Fertility, wealth
+ furry_fertility: "Omaha Vootie"
+ furry_fertility_possessive: "Omaha's"
+ #Health, civilization
+ furry_health: "Doctor Chairman Alchemist Samurai Roach"
+ furry_health_possessive: "Doctor Roach's"
+ #Night, moon, travellers
+ furry_night: "Inlé Usagi"
+ furry_night_possessive: "Inlé Usagi no "
+ #Water, maritimes, fishing
+ furry_water: "Fletch Halfpike"
+ furry_water_possessive:: "Fletch's"
+ #Fate
+ furry_fate: "Webweaver Charlotte"
+ furry_fate_possessive: "the Webweaver's"
+ #War, bravery, masculinity
+ furry_war: "Erma Felna"
+ furry_war_possessive: "Erma Felna's"
+ #Knowledge
+ furry_knowledge: "Pattenpaw"
+ furry_knowledge_possessive: "Pattenpaw's"
+ #Trickery, virility, femininity
+ furry_trickery: "Chester Cacomixtle"
+ furry_trickery_possessive: "Chester's"
+ #Witchcraft
+ furry_witchcraft: "The altdotstar Wizards"
+ furry_witchcraft_possessive: "The Wizards'"
+ #Death
+ furry_death: "Valkyrie Rowrbrt"
+ furry_death_possessive: "Rowrbrt's"
+ #Evil
+ furry_devil: "Shame the Closetkeeper"
+ furry_devil_possessive: "the Closetkeeper's"
+ #Other good gods
+ furry_chakat: "Chakat"
+ furry_food: "Don Lemmie Starv"
+ furry_nature_1: "Fir"
+ furry_nature_2: "Agrios"
+ #Other evil gods
+ furry_evil_2: "Evangelina"
+ furry_evil_3: "Apathy"
+
+ #Misc
+ furry_house_of_worship: "den"
+ furry_house_of_worship_plural: "dens"
+ furry_religious_symbol: "Pawprint"
+ furry_religious_text: "ible 12345"
+ furry_head: "furry head 12345"
+ furry_headtitle: "furry header 12345"
+ furry_devotee: "califurry"
+ furry_devotee: "califurry"
+ furry_priest: "keeper"
+ furry_priest_plural: "keepers"
+ furry_bishop: "grand keeper"
+ furry_bishop_plural: "grand keepers"
+ furry_divine_realm: "the Great Lakes"
+ furry_negative_afterlife: "the Deepest Depths"
+ furry_ghw: "Grand Voyage"
+ furry_ghw_plural: "Grand Voyages"
+
+
+
+ #Therian
+ therian: "Verdant Kindred of Therianthropy"
+ therian_adj: "Therian"
+ therian_adherent: "Therian"
+ therian_adherent_plural: "Therians"
+ therian_desc: "temporary therian description test 1234567890"
+
+ #Misc
+ therian_pantheon: "the Team"
+ therian_house_of_worship: "grove"
+ therian_house_of_worship_plural: "groves"
+ therian_religious_symbol: "ΔΘΨ"
+ therian_religious_text: "Records"
+ therian_religious_head_title: "Komijonur"
+ therian_religious_head_title_name: "the Northern League"
+ therian_devotee: "therian"
+ therian_devotee_plural: "therians"
+ therian_priest: "refri"
+ therian_priest_plural: "refris"
+ therian_bishop: "umpir"
+ therian_bishop_plural: "umpirs"
+ therian_positive_afterlife: "The Wilds"
+ therian_negative_afterlife: "Metroit"
+ therian_ghw: "Scrimmage"
+ therian_ghw_plural: "Scrimmages"
