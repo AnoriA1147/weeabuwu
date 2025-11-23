@@ -7,37 +7,37 @@ l_english:
 # l_korean:
 
  #Furry Religion
- furredkin_religion:0 "Furredkin"
- furredkin_religion_adj:0 "Furred"
- furredkin_religion_adherent:0 "Furry"
- furredkin_religion_adherent_plural:0 "Furries"
- furredkin_religion_desc:0 "Along the shores of the Great Lakes, from the decimation of the [Concept('the_event_ate','Event')|E], emerged the Lacustrine traditions. These faiths view fluidity as the central concept binding their religions together, like the eternal, but ever changing waves upon a beach. For as long as water and blood flow in a neverending cycle, so too shall time."
+ furredkin_religion: "Furredkin"
+ furredkin_religion_adj: "Furred"
+ furredkin_religion_adherent: "Furry"
+ furredkin_religion_adherent_plural: "Furries"
+ furredkin_religion_desc: "furredkin_religion_desc placeholder"
 
  #Califur
  furry: "Californine Kindred"
  furry_adj: "Califurred"
  furry_adherent: "Califurry"
  furry_adherent_plural: "Califurries"
- furry_desc: "The Lakeshore faithful believe that existence is dictated by a series of heavily intertwined and complex cycles, chief among them the process of love and anger which the water of the Lakes undergoes. Over the course of a year, she will cycle between being the Lady or the Witch, both giving and taking life as effortlessly as the waves cresting upon the shore, depending on her mood. Lakefolk see everything as having a spirit, and they revere many in their large cosmology. However, the greatest among them is Polaris, the Great Keeper-Spirit who remains everlasting across every cycle. Responsible for bestowing the gift of Eternal Light upon the world, Polaris will always try to guide adherents safely to their destinations, despite all the turmoil which the living must undoubtedly face."
+ furry_desc: "furry_desc placeholder"
 
  #High, Household, hearth
- furry_skiltaire: "two Saints Skiltaire"
+ furry_skiltaire: "two Saints Skiltaire" #the skiltaire house in california
  furry_skiltaire_possessive: "the Skiltaire's"
  #Creator, childcare
  furry_creator: "Amalthea" #last unicorn, greek goat
  furry_creator_possessive: "Amaltheas"
  #Fertility, wealth
- furry_fertility: "Omaha Vootie"
+ furry_fertility: "Omaha Vootie" #omaha the cat dancer
  furry_fertility_possessive: "Omaha's"
  #Health, civilization
  furry_health: "Doctor Chairman Alchemist Samurai Roach"
  furry_health_possessive: "Doctor Roach's"
  #Night, moon, travellers
  furry_night: "Inlé Usagi"
- furry_night_possessive: "Inlé Usagi no "
+ furry_night_possessive: "Inlé Usagi no"
  #Water, maritimes, fishing
  furry_water: "Fletch Halfpike"
- furry_water_possessive:: "Fletch's"
+ furry_water_possessive: "Fletch's"
  #Fate
  furry_fate: "Webweaver Charlotte"
  furry_fate_possessive: "the Webweaver's"
@@ -51,8 +51,8 @@ l_english:
  furry_trickery: "Chester Cacomixtle"
  furry_trickery_possessive: "Chester's"
  #Witchcraft
- furry_witchcraft: "The altdotstar Wizards"
- furry_witchcraft_possessive: "The Wizards'"
+ furry_witchcraft: "the altdotstar Wizards"
+ furry_witchcraft_possessive: "the Wizards'"
  #Death
  furry_death: "Valkyrie Rowrbrt"
  furry_death_possessive: "Rowrbrt's"
@@ -60,31 +60,30 @@ l_english:
  furry_devil: "Shame the Closetkeeper"
  furry_devil_possessive: "the Closetkeeper's"
  #Other good gods
- furry_chakat: "Chakat"
- furry_food: "Don Lemmie Starv"
- furry_nature_1: "Fir"
- furry_nature_2: "Agrios"
+ furry_good_god_chakat: "Chakat"
  #Other evil gods
  furry_evil_2: "Evangelina"
  furry_evil_3: "Apathy"
 
  #Misc
+ furry_pantheon: "furry_pantheon placeholder"
  furry_house_of_worship: "den"
  furry_house_of_worship_plural: "dens"
  furry_religious_symbol: "Pawprint"
- furry_religious_text: "ible 12345"
- furry_head: "furry head 12345"
- furry_headtitle: "furry header 12345"
+ furry_religious_text: "furry_religious_text placeholder"
+ furry_head: "furry_head placeholder"
+ furry_headtitle: "furry_headtitle placeholder"
  furry_devotee: "califurry"
- furry_devotee: "califurry"
- furry_priest: "keeper"
- furry_priest_plural: "keepers"
- furry_bishop: "grand keeper"
- furry_bishop_plural: "grand keepers"
- furry_divine_realm: "the Great Lakes"
- furry_negative_afterlife: "the Deepest Depths"
- furry_ghw: "Grand Voyage"
- furry_ghw_plural: "Grand Voyages"
+ furry_devotee_plural: "califurries"
+ furry_priest: "furry_priest placeholder"
+ furry_priest_plural: "furry_priest_plural placeholder"
+ furry_bishop: "furry_bishop placeholder"
+ furry_bishop_plural: "furry_bishop_plural placeholder"
+ furry_divine_realm: "furry_divine_realm placeholder"
+ furry_positive_afterlife: "furry_positive_afterlife placeholder"
+ furry_negative_afterlife: "furry_negative_afterlife placeholder"
+ furry_ghw: "furry_ghw placeholder"
+ furry_ghw_plural: "furry_ghw_plural placeholder"
 
 
 
@@ -93,23 +92,72 @@ l_english:
  therian_adj: "Therian"
  therian_adherent: "Therian"
  therian_adherent_plural: "Therians"
- therian_desc: "temporary therian description test 1234567890"
+ therian_desc: "therian_desc placeholder"
+
+ #High, nature, wilds
+ therian_agrios: "Agrios"
+ therian_agrios_possessive: "Agriou"
+ therian_fir: "Fir"
+ therian_fir_possessive: "Firos"
+ #Creator
+ therian_creator: "Katsika" #goat, from a Greek interpretation of Amalthaea
+ therian_creator_possessive: "Katsikas"
+ #Fertility, femininity
+ therian_fertility: "Feles" #cat, from Omaha
+ therian_fertility_possessive: "Felis"
+ #Health, craft
+ therian_health: "Procyon" #raccoon
+ therian_health_possessive: "Procynos"
+ #Night, moon
+ therian_night: "Lepus" #rabbit, from Usagi
+ therian_night_possessive: "Leporis"
+ #Water, fishing
+ therian_water: "Lutra" #otter
+ therian_water_possessive: "Lutrae"
+ #Home, hearth, community, trickery
+ therian_witchcraft: "Aliggalea" #from a conflation of Skiltaire and Winged Mink, both types of mustelid.
+ therian_witchcraft_possessive: "Aliggaleain"
+ #Fate, destiny
+ therian_fate: "Arachne" #spider, from Charlotte
+ therian_fate_possessive: "Arachnes"
+ #War, bravery, masculinity
+ therian_war: "Ursus" #bear
+ therian_war_possessive: "Ursi"
+ #Knowledge, wisdom
+ therian_knowledge: "Elaphos" #deer, stag
+ therian_knowledge_possessive: "Elaphou"
+ #Trickery, virility
+ therian_trickery: "Semifeles" #from Chester Cacomixtle (ringtail) via Cacomixtle meaning "half-cat"
+ therian_trickery_possessive: "Semifelis"
+ #Death, birth
+ therian_death: "Alces" #moose, elk
+ therian_death_possessive: "Alcis"
+ #Evil
+ therian_devil: "Urbanus" #City as a concept
+ therian_devil_possessive: "Urbani"
+
+ #Other good gods
+ therian_good_god_weather: "Bombycilla" #waxwing, as in the Cedar Waxwing
+ therian_good_god_harvest: "Cuculus" #cuckoo, a harbringer of spring and harvest\
+ therian_good_god_sun: "Chrysaetos" #golden eagle
+ therian_good_god_ecstasy: "Heptaglossai" #seven-tongued, from weed
 
  #Misc
- therian_pantheon: "the Team"
+ therian_pantheon: "therian_pantheon placeholder"
  therian_house_of_worship: "grove"
  therian_house_of_worship_plural: "groves"
  therian_religious_symbol: "ΔΘΨ"
- therian_religious_text: "Records"
- therian_religious_head_title: "Komijonur"
- therian_religious_head_title_name: "the Northern League"
+ therian_religious_text: "therian_religious_text placeholder"
+ therian_religious_head_title: "therian_religious_head_title placeholder"
+ therian_religious_head_title_name: "therian_religious_head_title_name placeholder"
  therian_devotee: "therian"
  therian_devotee_plural: "therians"
- therian_priest: "refri"
- therian_priest_plural: "refris"
- therian_bishop: "umpir"
- therian_bishop_plural: "umpirs"
+ therian_priest: "therian_priest placeholder"
+ therian_priest_plural: "therian_priest_plural placeholder"
+ therian_bishop: "therian_bishop placeholder"
+ therian_bishop_plural: "therian_bishop_plural placeholder"
+ therian_divine_realm: "therian_divine_realm placeholder"
  therian_positive_afterlife: "The Wilds"
  therian_negative_afterlife: "Metroit"
- therian_ghw: "Scrimmage"
- therian_ghw_plural: "Scrimmages"
+ therian_ghw: "therian_ghw placeholder"
+ therian_ghw_plural: "therian_ghw_plural placeholder"
