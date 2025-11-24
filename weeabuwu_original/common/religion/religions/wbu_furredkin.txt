@@ -1,10 +1,13 @@
 ﻿furredkin_religion = {
 	family = rf_pagan
 	graphical_faith = lacustrine_religion_gfx #UPDATE
+    piety_icon_group = "pagan"
 
 	pagan_roots = yes
 
 	doctrine = pagan_hostility_doctrine
+
+
 
 	#Main Group
 	doctrine = doctrine_no_head   		 	    #decentralized folklore faiths
@@ -66,7 +69,7 @@
 		HouseholdGodName = furry_skiltaire
 		HouseholdGodNamePossessive = furry_skiltaire_possessive
 		HouseholdGodSheHe = CHARACTER_SHEHE_THEY
-		HouseholdGodHerselfHimself = CHARACTER_THEMSELVES
+		#HouseholdGodHerselfHimself = CHARACTER_THEMSELVES
  		HouseholdGodHerHim = CHARACTER_HERHIM_THEM
 		HouseholdGodHerHis = CHARACTER_HERHIS_THEIR
 
@@ -415,7 +418,7 @@
                 DevilHerHis = CHARACTER_HERHIS_ITS
                 DevilHerselfHimself = CHARACTER_ITSSELF
 
-				WealthGod
+				#WealthGod
 				WealthGodName = therian_devil
 				WealthGodNamePossessive = therian_devil_possessive
 				WealthGodSheHe = CHARACTER_SHEHE_IT

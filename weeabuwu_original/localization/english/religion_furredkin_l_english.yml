@@ -1,4 +1,4 @@
-l_english:
+﻿l_english:
 # l_spanish:
 # l_german:
 # l_french:
@@ -8,20 +8,20 @@ l_english:
 
  #Furry Religion
  furredkin_religion: "Furredkin"
- furredkin_religion_adj: "Furred"
+ furredkin_religion_adj: "Furry"
  furredkin_religion_adherent: "Furry"
  furredkin_religion_adherent_plural: "Furries"
  furredkin_religion_desc: "furredkin_religion_desc placeholder"
 
  #Califur
  furry: "Californine Kindred"
- furry_adj: "Califurred"
+ furry_adj: "Califurry"
  furry_adherent: "Califurry"
  furry_adherent_plural: "Califurries"
  furry_desc: "furry_desc placeholder"
 
  #High, Household, hearth
- furry_skiltaire: "two Saints Skiltaire" #the skiltaire house in california
+ furry_skiltaire: "the two Saints Skiltaire" #the skiltaire house in california
  furry_skiltaire_possessive: "the Skiltaire's"
  #Creator, childcare
  furry_creator: "Amalthea" #last unicorn, greek goat
@@ -66,17 +66,17 @@ l_english:
  furry_evil_3: "Apathy"
 
  #Misc
- furry_pantheon: "furry_pantheon placeholder"
+ furry_pantheon: "Honored Ancestors"
  furry_house_of_worship: "den"
  furry_house_of_worship_plural: "dens"
  furry_religious_symbol: "Pawprint"
- furry_religious_text: "furry_religious_text placeholder"
+ furry_religious_text: "fragmented Zines"
  furry_head: "furry_head placeholder"
  furry_headtitle: "furry_headtitle placeholder"
  furry_devotee: "califurry"
  furry_devotee_plural: "califurries"
- furry_priest: "furry_priest placeholder"
- furry_priest_plural: "furry_priest_plural placeholder"
+ furry_priest: "host"
+ furry_priest_plural: "hosts"
  furry_bishop: "furry_bishop placeholder"
  furry_bishop_plural: "furry_bishop_plural placeholder"
  furry_divine_realm: "furry_divine_realm placeholder"

@@ -1,4 +1,6 @@
-﻿#why tf did i have to copy this entire quarter MB file
+﻿# OVERRIDE */common/religion/doctrines/01_ate_tenets.txt
+
+#why tf did i have to copy this entire quarter MB file
 #Author: Anori A 1147
 #Cloned from ATE 1.20, After the End Team
 
@@ -9,6 +11,82 @@
 doctrine_core_tenets = {
 	group = "core_tenets"
 	number_of_picks = 3
+
+    tenet_pastoral_isolation = {
+		icon = core_tenet_pastoral_isolation
+		name = {
+			first_valid = {
+				triggered_desc = {
+					trigger = {
+						ROOT = faith:insular_caribbean
+					}
+					desc = tenet_tropical_isolation
+				}
+                triggered_desc = {
+					trigger = {
+						religion_tag = furredkin_religion
+					}
+					desc = tenet_dry_isolation
+				}
+				triggered_desc = {
+					trigger = {
+						OR = {
+							has_doctrine = special_doctrine_is_christian_faith
+						}
+					}
+					desc = tenet_pastoral_isolation_name
+				}
+				desc = tenet_pastoral_isolation_name_new
+			}
+		}
+
+		is_shown = {
+			always = yes
+		}
+		can_pick = {
+			custom_description = {
+				text = doctrine_no_head_of_faith_trigger
+				doctrine:doctrine_no_head = { is_in_list = selected_doctrines }
+			}
+			custom_description = {
+				text = incompatible_tenet_false_conversion_sanction_trigger
+				NOT = {
+					doctrine:tenet_false_conversion_sanction = { is_in_list = selected_doctrines }
+				}
+			}
+		}
+
+		piety_cost = {
+			value = faith_tenet_cost_low
+
+			# Multiplier for keeping same tenet
+			if = {
+				limit = { has_doctrine = tenet_false_conversion_sanction }
+				multiply = faith_unchanged_doctrine_cost_mult
+			}
+		}
+
+		parameters = {
+			#holy_wars_forbidden = yes
+			sanctioned_false_conversion = yes
+			unattractive_for_character_conversions = yes
+			religious_isolation_conversion = yes
+			tenet_unlocks_t3_withdraw_from_view = yes
+		}
+
+		character_modifier = {
+			controlled_province_advantage = 3
+			hostile_raid_time = 0.33
+			development_growth_factor = -0.1
+			different_faith_liege_opinion = 10
+			opinion_of_different_faith_liege = 10
+		}
+
+		traits = {
+			virtues = { content }
+			sins = { wrathful }
+		}
+	}
 
 	tenet_sky_divination = {
 		icon = core_tenet_astrology
@@ -2534,82 +2612,6 @@ doctrine_core_tenets = {
 		traits = {
 			virtues = { generous = 2 }
 			sins = { greedy = 2 }
-		}
-	}
-
-	tenet_pastoral_isolation = {
-		icon = core_tenet_pastoral_isolation
-		name = {
-			first_valid = {
-				triggered_desc = {
-					trigger = {
-						ROOT = faith:insular_caribbean
-					}
-					desc = tenet_tropical_isolation
-				}
-                triggered_desc = {
-					trigger = {
-						religion_tag = furredkin_religion
-					}
-					desc = tenet_dry_isolation
-				}
-				triggered_desc = {
-					trigger = {
-						OR = {
-							has_doctrine = special_doctrine_is_christian_faith
-						}
-					}
-					desc = tenet_pastoral_isolation_name
-				}
-				desc = tenet_pastoral_isolation_name_new
-			}
-		}
-
-		is_shown = {
-			always = yes
-		}
-		can_pick = {
-			custom_description = {
-				text = doctrine_no_head_of_faith_trigger
-				doctrine:doctrine_no_head = { is_in_list = selected_doctrines }
-			}
-			custom_description = {
-				text = incompatible_tenet_false_conversion_sanction_trigger
-				NOT = {
-					doctrine:tenet_false_conversion_sanction = { is_in_list = selected_doctrines }
-				}
-			}
-		}
-
-		piety_cost = {
-			value = faith_tenet_cost_low
-
-			# Multiplier for keeping same tenet
-			if = {
-				limit = { has_doctrine = tenet_false_conversion_sanction }
-				multiply = faith_unchanged_doctrine_cost_mult
-			}
-		}
-
-		parameters = {
-			#holy_wars_forbidden = yes
-			sanctioned_false_conversion = yes
-			unattractive_for_character_conversions = yes
-			religious_isolation_conversion = yes
-			tenet_unlocks_t3_withdraw_from_view = yes
-		}
-
-		character_modifier = {
-			controlled_province_advantage = 3
-			hostile_raid_time = 0.33
-			development_growth_factor = -0.1
-			different_faith_liege_opinion = 10
-			opinion_of_different_faith_liege = 10
-		}
-
-		traits = {
-			virtues = { content }
-			sins = { wrathful }
 		}
 	}
 
