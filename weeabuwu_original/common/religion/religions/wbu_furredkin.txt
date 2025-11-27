@@ -7,8 +7,6 @@
 
 	doctrine = pagan_hostility_doctrine
 
-
-
 	#Main Group
 	doctrine = doctrine_no_head   		 	    #decentralized folklore faiths
 	doctrine = doctrine_gender_equal          	#egalitarianism is a fundamental idea
@@ -28,7 +26,7 @@
 	doctrine = doctrine_homosexuality_accepted	    #love allowed in any form
 	doctrine = doctrine_adultery_men_accepted	    #blood less important than bonds
 	doctrine = doctrine_adultery_women_accepted
-	doctrine = doctrine_kinslaying_extended_family_crime #betrayal of the community and chosen family
+	doctrine = doctrine_kinslaying_extended_family_crime    #betrayal of the community and chosen family
 	doctrine = doctrine_deviancy_accepted
 	doctrine = doctrine_witchcraft_accepted
 
@@ -39,6 +37,7 @@
 	doctrine = doctrine_clerical_succession_temporal_appointment
 	doctrine = doctrine_building_temple_other			            #generic temple
 	doctrine = doctrine_funeral_celebration_of_life 		        #focus on life and revelry
+	doctrine = doctrine_no_anointment
 
 	traits = {
 		virtues = { compassionate honest forgiving  }
@@ -187,8 +186,8 @@
 		}
 		EvilGodNames = {
             furry_devil
-            furry_evil_2
-            furry_evil_3
+            furry_evil_god_2
+            furry_evil_god_3
 		}
 		DivineRealm = furry_divine_realm
 		PositiveAfterLife = furry_divine_realm
@@ -198,15 +197,15 @@
 		HouseOfWorshipPlural = furry_house_of_worship_plural
 		ReligiousSymbol = furry_religious_symbol
 		ReligiousText = furry_religious_text
-		ReligiousHeadName = furry_head
-		ReligiousHeadTitleName = furry_headtitle
+		ReligiousHeadName = furry_religious_head_title
+		ReligiousHeadTitleName = furry_religious_head_title_name
 
 		DevoteeMale = furry_devotee
-		DevoteeMalePlural = furry_devotee
+		DevoteeMalePlural = furry_devotee_plural
 		DevoteeFemale = furry_devotee
-		DevoteeFemalePlural = furry_devotee
+		DevoteeFemalePlural = furry_devotee_plural
 		DevoteeNeuter = furry_devotee
-		DevoteeNeuterPlural = furry_devotee
+		DevoteeNeuterPlural = furry_devotee_plural
 
     	PriestMale = furry_priest
 		PriestMalePlural = furry_priest_plural
@@ -223,16 +222,13 @@
 		BishopNeuter = furry_bishop
 		BishopNeuterPlural = furry_bishop_plural
 
-		GHWName = furry_ghw
-		GHWNamePlural = furry_ghw_plural
+		GHWName = ghw_skirmish_furry
+		GHWNamePlural = ghw_skirmish_furry_plural
 	}
 
 	faiths = {
 		furry = {
 			#Californine Kindred
-			#ICONOGRAPHY TBU
-			color = { 0 39 76 } #U of M Blue
-			icon = lakeshore
 
 			#HOLY SITES TBU
 			holy_site = mackinac
@@ -242,18 +238,19 @@
 			holy_site = indiana_dunes
 			holy_site = perrys_victory
 
-			#TENETS
-			doctrine = reformed_faith_doctrine #these are considered reformed, despite being "pagan"
-
+            #tenets
 			doctrine = tenet_ritual_celebrations
 			doctrine = tenet_melodic_transmission
 			doctrine = tenet_walking_metamorphosis
 
+            #Hostility doctrines
+
 			#Main Group
 			#Marriage
+            doctrine = doctrine_adultery_men_shunned	    #considered a form of betrayal
+	        doctrine = doctrine_adultery_women_shunned
 			#Crimes
 			#Clerical Functions
-			#doctrine = doctrine_lakeshore_virsin
 
 			#holy_order_names = { #TBU
 			#	{ name = "holy_order_lightbringers" coat_of_arms = "holy_order_lightbringers" }
@@ -263,10 +260,6 @@
 
 		therian = {
 			#Verdant Kindred of Therianthropy.
-			#ICONOGRAPHY TBU
-			color = { 79 38 131 } #official Vikings team color
-			icon = viking
-			#reformed_icon = viking_reformed
 
 			#HOLY SITES TBU
 			holy_site = detroit
@@ -277,14 +270,12 @@
 			holy_site = canton
 
 			#TENETS
-			doctrine = reformed_faith_doctrine #these are considered reformed, despite being "pagan"
-
 			doctrine = tenet_adorcism
 			doctrine = tenet_the_beauty_around_us
 			doctrine = tenet_medicine_society
 
 			#Main Group
-			doctrine = doctrine_theocracy_temporal 	#more traditional ordained priests
+			doctrine = doctrine_theocracy_temporal 	#more traditional exclusive priests
 
 			#Marriage
 			#doctrine = doctrine_divorce_allowed	#maybe create new no-penalty doctrine later
@@ -293,8 +284,10 @@
 			doctrine = doctrine_witchcraft_virtuous
 
 			#Clerical Functions
-			doctrine = doctrine_clerical_succession_spiritual_appointment
+			doctrine = doctrine_clerical_succession_spiritual_appointment   #more traditional exclusive priests
 			doctrine = doctrine_funeral_nature_burial
+
+            #Hostilty doctrines
 
 			#reserved_male_names = { #TBU
 			#	Acme Anders Auroch Bemidji Bengt Bjorn Bud Carl Carter Christiansen Cnut Creekmur Cris Doleman Eagan Enefel Eric Foreman Fran Gatsky Gipp Gordie Gopher Grant Gretzky Guthrum Hel Howe Ing Ivar John Kensington Lars Lary Leif Lennart Lofton Loki Lombardi Magnus Madden McCarthy Mjolnir Moss Nagurski Nitschke Odin Offense Olaf Ole Olof Page Peterson Puck Ragnar Ramson Randall Randy Rodgers Sanders Schmidt Sharpe Skol Starr Superbowl Sven Sweyn Tamarack Tarkenton Thor Tingelhoff Tyr Ubba Ulf Viktor Winfield Yary Yggdrasil Zygi
@@ -450,13 +443,13 @@
                     therian_devil
 				}
 				DivineRealm = therian_divine_realm
-				PositiveAfterLife = therian_divine_realm
+				PositiveAfterLife = therian_positive_afterlife
 				NegativeAfterLife = therian_negative_afterlife
 
 				HouseOfWorship = therian_house_of_worship
 				HouseOfWorshipPlural = therian_house_of_worship_plural
 				ReligiousSymbol = therian_religious_symbol
-				ReligiousText = therian_religious_text
+				ReligiousText = furry_divine_realm          #yes this is intentional
 				ReligiousHeadName = therian_religious_head_title
 				ReligiousHeadTitleName = therian_religious_head_title_name
 
@@ -482,8 +475,8 @@
 				BishopNeuter = therian_bishop
 				BishopNeuterPlural = therian_bishop_plural
 
-				GHWName = ghw_great_holy_war
-				GHWNamePlural = ghw_great_holy_wars
+				GHWName = ghw_skirmish_furry
+				GHWNamePlural = ghw_skirmish_furry_plural
 			}
 		}
 	}

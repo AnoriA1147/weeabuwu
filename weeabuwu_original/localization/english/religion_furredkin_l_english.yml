@@ -62,8 +62,8 @@
  #Other good gods
  furry_good_god_chakat: "Chakat"
  #Other evil gods
- furry_evil_2: "Evangelina"
- furry_evil_3: "Apathy"
+ furry_evil_god_2: "Evangelina"
+ furry_evil_god_3: "Apathy"
 
  #Misc
  furry_pantheon: "Honored Ancestors"
@@ -71,19 +71,19 @@
  furry_house_of_worship_plural: "dens"
  furry_religious_symbol: "Pawprint"
  furry_religious_text: "fragmented Zines"
- furry_head: "furry_head placeholder"
- furry_headtitle: "furry_headtitle placeholder"
+ furry_religious_head_title: "Chairfurry"
+ furry_religious_head_title_name: "Board"
  furry_devotee: "califurry"
  furry_devotee_plural: "califurries"
  furry_priest: "host"
  furry_priest_plural: "hosts"
- furry_bishop: "furry_bishop placeholder"
- furry_bishop_plural: "furry_bishop_plural placeholder"
- furry_divine_realm: "furry_divine_realm placeholder"
+ furry_bishop: "moderator"
+ furry_bishop_plural: "moderators"
+ furry_divine_realm: "Communal Memories"
  furry_positive_afterlife: "furry_positive_afterlife placeholder"
- furry_negative_afterlife: "furry_negative_afterlife placeholder"
- furry_ghw: "furry_ghw placeholder"
- furry_ghw_plural: "furry_ghw_plural placeholder"
+ furry_negative_afterlife: "Blacklanded"
+ ghw_skirmish_furry: "Great Skirmish"
+ ghw_skirmish_furry_plural: "Great Skirmishes"
 
 
 
@@ -138,26 +138,26 @@
 
  #Other good gods
  therian_good_god_weather: "Bombycilla" #waxwing, as in the Cedar Waxwing
- therian_good_god_harvest: "Cuculus" #cuckoo, a harbringer of spring and harvest\
+ therian_good_god_harvest: "Cuculus" #cuckoo, a harbringer of spring and harvest
  therian_good_god_sun: "Chrysaetos" #golden eagle
  therian_good_god_ecstasy: "Heptaglossai" #seven-tongued, from weed
 
  #Misc
- therian_pantheon: "therian_pantheon placeholder"
- therian_house_of_worship: "grove"
- therian_house_of_worship_plural: "groves"
- therian_religious_symbol: "ΔΘΨ"
+ therian_pantheon: "Spirits' Pack"
+ therian_house_of_worship: "howl"     #"howl" being a common term for therian gatherings
+ therian_house_of_worship_plural: "howls"
+ therian_religious_symbol: "ΔΘ"
  therian_religious_text: "therian_religious_text placeholder"
- therian_religious_head_title: "therian_religious_head_title placeholder"
- therian_religious_head_title_name: "therian_religious_head_title_name placeholder"
+ therian_religious_head_title: "Lycapparitor"
+ therian_religious_head_title_name: "Chiefdom"
  therian_devotee: "therian"
  therian_devotee_plural: "therians"
- therian_priest: "therian_priest placeholder"
- therian_priest_plural: "therian_priest_plural placeholder"
- therian_bishop: "therian_bishop placeholder"
- therian_bishop_plural: "therian_bishop_plural placeholder"
- therian_divine_realm: "therian_divine_realm placeholder"
+ therian_priest: "howlhead" #leader of a howl
+ therian_priest_plural: "howlheads"
+ therian_bishop: "greymuzzle" #elderly and respected community members
+ therian_bishop_plural: "greymuzzles"
+ therian_divine_realm: "alterwhere"
  therian_positive_afterlife: "The Wilds"
- therian_negative_afterlife: "Metroit"
- therian_ghw: "therian_ghw placeholder"
- therian_ghw_plural: "therian_ghw_plural placeholder"
+ therian_negative_afterlife: "Metroit" #fuck detroit
+ ghw_therian: "therian_ghw placeholder"
+ ghw_therian_plural: "therian_ghw_plural placeholder"
