@@ -229,6 +229,8 @@
 	faiths = {
 		furry = {
 			#Californine Kindred
+			color = { 66 72 158 } #WikiFur blue
+			icon = califurry
 
 			#HOLY SITES TBU
 			holy_site = mackinac
@@ -260,6 +262,8 @@
 
 		therian = {
 			#Verdant Kindred of Therianthropy.
+			color = { 22 121 72 } #from the otherkin-therian unity flag
+			icon = therian #new icon created
 
 			#HOLY SITES TBU
 			holy_site = detroit
