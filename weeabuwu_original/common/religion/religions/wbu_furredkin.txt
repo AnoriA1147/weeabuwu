@@ -246,6 +246,7 @@
 			doctrine = tenet_walking_metamorphosis
 
             #Hostility doctrines
+            doctrine = special_doctrine_wbu_four_paws
 
 			#Main Group
 			#Marriage
@@ -292,6 +293,7 @@
 			doctrine = doctrine_funeral_nature_burial
 
             #Hostilty doctrines
+            doctrine = special_doctrine_wbu_four_paws
 
 			#reserved_male_names = { #TBU
 			#	Acme Anders Auroch Bemidji Bengt Bjorn Bud Carl Carter Christiansen Cnut Creekmur Cris Doleman Eagan Enefel Eric Foreman Fran Gatsky Gipp Gordie Gopher Grant Gretzky Guthrum Hel Howe Ing Ivar John Kensington Lars Lary Leif Lennart Lofton Loki Lombardi Magnus Madden McCarthy Mjolnir Moss Nagurski Nitschke Odin Offense Olaf Ole Olof Page Peterson Puck Ragnar Ramson Randall Randy Rodgers Sanders Schmidt Sharpe Skol Starr Superbowl Sven Sweyn Tamarack Tarkenton Thor Tingelhoff Tyr Ubba Ulf Viktor Winfield Yary Yggdrasil Zygi

@@ -1,0 +1,73 @@
+﻿doctrine_wbu_furredkin_tolerance = {
+    group = "main_group"    #shows up in the main group section of the religion UI
+    is_available_on_create = {
+        religion_tag = furredkin_religion #only available to furredkin
+    }
+
+    special_doctrine_wbu_four_paws = { #main hostility doctrine
+        piety_cost = {
+			value = faith_doctrine_cost_low
+			if = {
+				limit = { has_doctrine = special_doctrine_wbu_four_paws }
+				multiply = 0 #no cost if you already have it
+			}
+		}
+
+        parameters = {
+            hostility_override_special_doctrine_wbu_four_paws = 1 #co-astray
+            hostility_override_special_doctrine_natural_order = 1 #gaian natural order
+            hostility_override_special_doctrine_manyfold_path = 2 #guruism, cao daiism
+            hostility_override_special_doctrine_ik_onkar = 2 #sikhism
+            hostility_override_special_doctrine_global_village = 2 #digital
+        }
+    }
+}
+
+# PARTIAL OVERRIDE: */common/religion/doctrines/00_2_ate_doctrines_misc.txt
+# Modifies the naturalist tolerances to include the furredkin
+doctrine_naturalist_tolerance = {
+	group = "main_group"
+	is_available_on_create = {
+		religion_tag = naturalist_religion
+	}
+	special_doctrine_natural_order = {
+		is_shown = {
+			religion_tag = naturalist_religion
+		}
+		piety_cost = {
+			value = faith_doctrine_cost_low
+			if = {
+				limit = { has_doctrine = special_doctrine_natural_order }
+				multiply = 0
+			}
+		}
+		parameters = {
+			loc_parameter_temp_hostility_override_special_doctrine_natural_order = 1
+			hostility_override_special_doctrine_manyfold_path = 2
+			hostility_override_special_doctrine_on_my_honor = 1
+			hostility_override_special_doctrine_sustainable_industry = 1
+			hostility_override_harmonic_hostility_doctrine = 1
+			hostility_override_amerindian_hostility_doctrine = 1
+			hostility_override_special_doctrine_wbu_four_paws = 1
+		}
+	}
+
+	special_doctrine_hang_loose = {
+		is_shown = {
+			religion_tag = naturalist_religion
+		}
+		piety_cost = {
+			value = faith_doctrine_cost_low
+			if = {
+				limit = { has_doctrine = special_doctrine_hang_loose }
+				multiply = 0
+			}
+		}
+		parameters = {
+			hostility_override_harmonic_hostility_doctrine = 1
+		}
+		traits = {
+			virtues = { athletic }
+		}
+	}
+}
