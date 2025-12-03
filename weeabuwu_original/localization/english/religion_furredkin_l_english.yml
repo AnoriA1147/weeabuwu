@@ -30,37 +30,37 @@
  furry_fertility: "Omaha Vootie" #omaha the cat dancer
  furry_fertility_possessive: "Omaha's"
  #Health, civilization
- furry_health: "Doctor Chairman Alchemist Samurai Roach"
+ furry_health: "Doctor Chairman Alchemist Samurai Roach" #Dr. Samuel Conway
  furry_health_possessive: "Doctor Roach's"
  #Night, moon, travellers
- furry_night: "Inlé Usagi"
+ furry_night: "Inlé Usagi" #Inlé, Watership Down. Usagi Yojimbo,  in Albedo Anthropomorphics
  furry_night_possessive: "Inlé Usagi no"
  #Water, maritimes, fishing
- furry_water: "Fletch Halfpike"
+ furry_water: "Fletch Halfpike" #from Ken Fletcher and Spontoon Island
  furry_water_possessive: "Fletch's"
  #Fate
- furry_fate: "Webweaver Charlotte"
+ furry_fate: "Webweaver Charlotte" #Charlotte's Web
  furry_fate_possessive: "the Webweaver's"
  #War, bravery, masculinity
- furry_war: "Erma Felna"
+ furry_war: "Erma Felna" #Erma Felna: EDF, published in Albedo Anthropomorphics
  furry_war_possessive: "Erma Felna's"
  #Knowledge
- furry_knowledge: "Pattenpaw"
+ furry_knowledge: "Pattenpaw" #Fred Patten
  furry_knowledge_possessive: "Pattenpaw's"
  #Trickery, virility, femininity
- furry_trickery: "Chester Cacomixtle"
+ furry_trickery: "Chester Cacomixtle" #Chester Ringtail
  furry_trickery_possessive: "Chester's"
  #Witchcraft
  furry_witchcraft: "the altdotstar Wizards"
  furry_witchcraft_possessive: "the Wizards'"
  #Death
- furry_death: "Valkyrie Rowrbrt"
+ furry_death: "Valkyrie Rowrbrt" #Bob Robert, aka Vawlkee from Rowrbrazzle. I don't recall why I picked this one.
  furry_death_possessive: "Rowrbrt's"
  #Evil
  furry_devil: "Shame the Closetkeeper"
  furry_devil_possessive: "the Closetkeeper's"
  #Other good gods
- furry_good_god_chakat: "Chakat"
+ furry_good_god_chakat: "Chakat" #Chakat
  #Other evil gods
  furry_evil_god_2: "Evangelina"
  furry_evil_god_3: "Apathy"
@@ -133,7 +133,7 @@
  therian_death: "Alces" #moose, elk
  therian_death_possessive: "Alcis"
  #Evil
- therian_devil: "Urbanus" #City as a concept
+ therian_devil: "Urbanus" #Cities as a concept
  therian_devil_possessive: "Urbani"
 
  #Other good gods
@@ -144,17 +144,17 @@
 
  #Misc
  therian_pantheon: "Spirits' Pack"
- therian_house_of_worship: "howl"     #"howl" being a common term for therian gatherings
+ therian_house_of_worship: "howl"     #howl being a common term for therian gatherings
  therian_house_of_worship_plural: "howls"
- therian_religious_symbol: "ΔΘ"
+ therian_religious_symbol: "ΔΘ" #technically anachronic
  therian_religious_text: "therian_religious_text placeholder"
- therian_religious_head_title: "Lycapparitor"
+ therian_religious_head_title: "Lycapparitor" #made up
  therian_religious_head_title_name: "Chiefdom"
  therian_devotee: "therian"
  therian_devotee_plural: "therians"
- therian_priest: "howlhead" #leader of a howl
+ therian_priest: "howlhead" #lit leader of a howl
  therian_priest_plural: "howlheads"
- therian_bishop: "greymuzzle" #elderly and respected community members
+ therian_bishop: "greymuzzle" #based on the term for elderly and respected community members
  therian_bishop_plural: "greymuzzles"
  therian_divine_realm: "alterwhere"
  therian_positive_afterlife: "The Wilds"

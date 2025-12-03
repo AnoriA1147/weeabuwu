@@ -1,7 +1,6 @@
 ﻿# OVERRIDE */common/religion/doctrines/01_ate_tenets.txt
 
 #why tf did i have to copy this entire quarter MB file
-#Author: Anori A 1147
 #Cloned from ATE 1.20, After the End Team
 
 #CHANGES
