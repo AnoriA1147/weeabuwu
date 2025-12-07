@@ -1,0 +1,94 @@
+﻿####
+# CALIFURRY HOLY SITES
+####
+
+wbu_garden_grove = {
+    #Site of the Skiltare House and most ConFurence locations
+    #no barony assigned, as multiple locations were signifigant
+    county = c_orange #Orange County
+
+    character_modifier = {
+        monthly_piety_gain_mult = 0.1 #+10% monthly piety
+        diplomacy_per_piety_level = 1 #+1 diplomacy per level of devotion
+    }
+
+    flag = wbu_garden_grove_conversion_resistance_bonus #50% county conversion resistance
+}
+
+wbu_valley_forge = {
+    #Anthrocon 1999 – 2005
+    barony = b_us_pa_bryn_mawr
+    county = c_philadelphia
+
+    character_modifier = {
+        different_culture_opinion = 10 #+10 opinion from different cultures
+        learning = 1 #flat +1 learning
+    }
+
+    flag = wbu_valley_forge_conversion_bonus #+25% county conversion bonus
+}
+
+wbu_rosemont = {
+    #MWFF in Arlington Heights
+    barony = b_us_il_elgin
+    county = c_north_shore
+
+    character_modifier = {
+        domain_tax_same_faith_mult = 0.1 #+10% domain tax income from same faith
+        #monthly_piety_gain_per_happy_powerful_vassal_mult = 0.05 #+5% monthly piety gain per happy powerful vassal
+        monthly_prestige_gain_mult = 0.05 #+5% monthly prestige gain
+        embarkation_cost_mult = -0.25 #75% embarkation cost
+    }
+}
+
+#use san_jose from Buddhism instead.
+#wbu_san_jose = {
+#    #Further Confusion (99–)
+#    barony = b_us_ca_san_jose
+#    county = c_santa_clara
+#
+#    character_modifier = {
+#        development_growth_factor = 0.1 #+10% development growth
+#        cultural_head_fascination_mult = 0.1
+#    }
+#}
+
+wbu_memphis = {
+    #Mephit Fur Meet
+    barony = b_us_tn_memphis
+    county = c_memphis
+
+    character_modifier = {
+        powerful_vassal_opinion = 10 #+10 opinion from powerful vassals
+        stress_loss_mult = 0.1 #+10 % stress loss
+        monthly_county_control_growth_factor = 0.1 #+10% county control growth
+    }
+}
+
+wbu_fife = {
+    #Conifur
+    barony = b_us_wa_tacoma
+    county = c_seattle
+
+    character_modifier = {
+        monthly_stewardship_lifestyle_xp_gain_mult = 0.15 #+15% stewardship lifestyle XP gain
+        different_faith_opinion = 10 #+10 opinion from different faiths
+    }
+}
+
+#disused
+#wbu_albany = {
+#    #Anthrocon (97, 98), formerly Albany Anthrocon
+#    barony = b_us_ny_albany
+#    county = c_albany
+#}
+
+####
+# THERIAN HOLY SITES
+####
+
+wbu_minden = {
+    #Feral!
+    barony = b_ca_on_haliburton_village
+    county = c_haliburton
+}

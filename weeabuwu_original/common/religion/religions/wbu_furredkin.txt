@@ -233,12 +233,12 @@
 			icon = califurry
 
 			#HOLY SITES TBU
-			holy_site = mackinac
-			holy_site = niagara
-			holy_site = sleeping_giant
-			holy_site = minneapolis
-			holy_site = indiana_dunes
-			holy_site = perrys_victory
+			holy_site = wbu_garden_grove
+			holy_site = wbu_valley_forge
+			holy_site = wbu_rosemont
+			holy_site = wbu_memphis
+			holy_site = wbu_fife
+			holy_site = san_jose #from Buddhism instead
 
             #tenets
 			doctrine = tenet_ritual_celebrations
@@ -267,12 +267,12 @@
 			icon = therian #new icon created
 
 			#HOLY SITES TBU
-			holy_site = detroit
-			holy_site = green_bay
-			holy_site = chicago
-			holy_site = minneapolis
-			holy_site = kensington
-			holy_site = canton
+			holy_site = wbu_garden_grove #shared with californine kindred
+			holy_site = wbu_valley_forge #shared with californine kindred
+			holy_site = wbu_minden
+			holy_site = minneapolis #TBU
+			holy_site = kensington #TBU
+			holy_site = canton #TBU
 
 			#TENETS
 			doctrine = tenet_adorcism
