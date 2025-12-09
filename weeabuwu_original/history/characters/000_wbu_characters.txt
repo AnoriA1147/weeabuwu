@@ -1,0 +1,26 @@
+﻿#SINGLE ENTRY OVERRIDE */history/characters/00_ate_characters_table_generated_California.txt
+
+#Replaces the default Vivienne with a near-identical furry version
+character_c_oceanside = {
+	name = "Vivienne"
+	dynasty = dynn_california_maia
+    dna = wbu_vivienne_persistent_dna
+	religion = "cetic"
+	culture = "angeleno"
+	female = yes
+    sexuality = bisexual #obviously
+
+	trait = education_learning_3
+	trait = gregarious
+	trait = humble
+	trait = compassionate
+    trait = shrewd
+
+	2648.2.19 = {
+		birth = yes
+        effect = {
+			make_character_crypto_religionist_effect = { CRYPTO_RELIGION = faith:furry } #secret furry
+		}
+        give_nickname = nick_wbu_the_mink
+	}
+}

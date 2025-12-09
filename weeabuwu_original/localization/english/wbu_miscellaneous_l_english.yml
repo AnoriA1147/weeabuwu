@@ -7,3 +7,5 @@
 # l_korean:
 
  CHARACTER_ITSSELF: "itself"
+ nick_wbu_the_mink: "the Mink"
+ nick_wbu_the_mink_desc: "Though outwardly elegant and refined, [CHARACTER.GetShortUINameNoTooltipNoFormat|U] seems to hide some curious secret beneath [CharYourHerHis(CHARACTER)] polished exterior."

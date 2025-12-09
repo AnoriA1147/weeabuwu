@@ -1,0 +1,2 @@
+﻿nick_wbu_the_mink = {}
+#i hate this nickname system so much
