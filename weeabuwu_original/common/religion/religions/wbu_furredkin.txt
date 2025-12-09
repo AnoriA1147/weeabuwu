@@ -238,7 +238,7 @@
 			holy_site = wbu_rosemont
 			holy_site = wbu_memphis
 			holy_site = wbu_fife
-			holy_site = san_jose #from Buddhism instead
+			holy_site = wbu_san_jose
 
             #tenets
 			doctrine = tenet_ritual_celebrations
@@ -270,9 +270,9 @@
 			holy_site = wbu_garden_grove #shared with californine kindred
 			holy_site = wbu_valley_forge #shared with californine kindred
 			holy_site = wbu_minden
-			holy_site = minneapolis #TBU
-			holy_site = kensington #TBU
-			holy_site = canton #TBU
+			holy_site = wbu_southington
+			holy_site = wbu_nantahala
+			holy_site = wbu_cougar_hot_springs
 
 			#TENETS
 			doctrine = tenet_adorcism

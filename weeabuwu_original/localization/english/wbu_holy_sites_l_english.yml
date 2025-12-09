@@ -12,12 +12,16 @@
  holy_site_wbu_valley_forge_name: "Valley Forge"
  holy_site_wbu_valley_forge_effects: "County Conversion Speed: #P +25%#!"
  holy_site_wbu_rosemont_name: "Arlington Heights" #Rosemont is an anachronism
- #holy_site_wbu_san_jose_name: "San Jose"
+ holy_site_wbu_san_jose_name: "San Jose"
  holy_site_wbu_memphis_name: "Mephit"
  holy_site_wbu_fife_name: "Fife"
  holy_site_wbu_minden_name: "Minden"
  holy_site_wbu_albany_name: "Albany" #disused
  #holy_site_wbu_tuscon_name: "Tuscon" #disused
+ holy_site_wbu_southington_name: "Southington"
+ holy_site_wbu_nantahala_name: "Nantahala"
+ holy_site_wbu_cougar_hot_springs_name: "Cougar Hot Springs"
+
 
 
 
