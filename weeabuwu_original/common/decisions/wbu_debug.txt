@@ -1,0 +1,105 @@
+﻿#Debug decision to instantly adopt the furry faith for free for testing purposes
+wbu_debug_adopt_furry = {
+    picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	}
+
+    #localization
+ 	desc = wbu_debug_adopt_furry_desc
+ 	selection_tooltip = wbu_debug_adopt_furry_tooltip
+
+	decision_group_type = debug
+
+    is_shown = {
+        is_playable_character = yes
+        NOT = {
+            root.faith = faith:furry
+        }
+    }
+
+    is_valid = {
+    }
+
+    #copied from embrace_tengriism_decision, no clue how it works
+    effect = {
+        set_character_faith = faith:furry
+        domicile = {
+			set_domicile_faith = faith:furry #might be unnecessary as California is not nomadic
+		}
+        # Spouse conversion
+        every_spouse = {
+			limit = {
+				is_courtier_of = root
+				NOT = { faith = root.faith }
+			}
+			add_to_list = spouses_and_family_to_convert
+		}
+		# Family at court also convert
+		every_close_or_extended_family_member = {
+			limit = {
+				is_courtier_of = root
+				NOT = { faith = root.faith }
+			}
+			add_to_list = spouses_and_family_to_convert
+		}
+		every_in_list = {
+			list = spouses_and_family_to_convert
+			set_character_faith = faith:furry
+		}
+    }
+
+    ai_check_interval = 0 #ai will never do
+}
+
+#Debug decision to instantly adopt the therian faith for free for testing purposes
+wbu_debug_adopt_therian = {
+    picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	}
+
+    #localization
+ 	desc = wbu_debug_adopt_therian_desc
+ 	selection_tooltip = wbu_debug_adopt_therian_tooltip
+
+	decision_group_type = debug
+
+    is_shown = {
+        is_playable_character = yes
+        NOT = {
+            root.faith = faith:therian
+        }
+    }
+
+    is_valid = {
+    }
+
+    #copied from embrace_tengriism_decision, no clue how it works
+    effect = {
+        set_character_faith = faith:therian
+        domicile = {
+			set_domicile_faith = faith:therian #might be unnecessary as California is not nomadic
+		}
+        # Spouse conversion
+        every_spouse = {
+			limit = {
+				is_courtier_of = root
+				NOT = { faith = root.faith }
+			}
+			add_to_list = spouses_and_family_to_convert
+		}
+		# Family at court also convert
+		every_close_or_extended_family_member = {
+			limit = {
+				is_courtier_of = root
+				NOT = { faith = root.faith }
+			}
+			add_to_list = spouses_and_family_to_convert
+		}
+		every_in_list = {
+			list = spouses_and_family_to_convert
+			set_character_faith = faith:therian
+		}
+    }
+
+    ai_check_interval = 0 #ai will never do
+}
