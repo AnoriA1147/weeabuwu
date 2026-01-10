@@ -6,6 +6,7 @@
 # l_simp_chinese:
 # l_korean:
 
+ # Nickname for Count Vivienne of Oceanside, the starting crypto-furry character
  CHARACTER_ITSSELF: "itself"
  nick_wbu_the_mink: "the Mink"
  nick_wbu_the_mink_desc: "Though outwardly elegant and refined, [CHARACTER.GetShortUINameNoTooltipNoFormat|U] seems to hide some curious secret beneath [CharYourHerHis(CHARACTER)] polished exterior."

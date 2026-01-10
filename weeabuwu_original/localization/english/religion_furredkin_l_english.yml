@@ -6,14 +6,20 @@
 # l_simp_chinese:
 # l_korean:
 
+ ####
  #Furry Religion
+ ####
  furredkin_religion: "Furredkin"
  furredkin_religion_adj: "Furry"
  furredkin_religion_adherent: "Furry"
  furredkin_religion_adherent_plural: "Furries"
  furredkin_religion_desc: "furredkin_religion_desc placeholder"
 
+
+
+ ####
  #Califur
+ ####
  furry: "Californine Kindred"
  furry_adj: "Califurry"
  furry_adherent: "Califurry"
@@ -22,7 +28,7 @@
 
  #High, Household, hearth
  furry_skiltaire: "the two Saints Skiltaire" #the skiltaire house in california
- furry_skiltaire_possessive: "the Skiltaire's"
+ furry_skiltaire_possessive: "the Skiltaires'"
  #Creator, childcare
  furry_creator: "Amalthea" #last unicorn, greek goat
  furry_creator_possessive: "Amaltheas"
@@ -66,7 +72,7 @@
  furry_evil_god_3: "Apathy"
 
  #Misc
- furry_pantheon: "Honored Ancestors"
+ furry_pantheon: "the Honored Ancestors"
  furry_house_of_worship: "den"
  furry_house_of_worship_plural: "dens"
  furry_religious_symbol: "Pawprint"
@@ -87,7 +93,9 @@
 
 
 
+ ####
  #Therian
+ ####
  therian: "Verdant Kindred of Therianthropy"
  therian_adj: "Therian"
  therian_adherent: "Therian"
@@ -146,7 +154,7 @@
  therian_pantheon: "Spirits' Pack"
  therian_house_of_worship: "howl"     #howl being a common term for therian gatherings
  therian_house_of_worship_plural: "howls"
- therian_religious_symbol: "ΔΘ" #technically anachronic
+ therian_religious_symbol: "ΔΘ" #technically anachronistic
  therian_religious_text: "therian_religious_text placeholder"
  therian_religious_head_title: "Lycapparitor" #made up
  therian_religious_head_title_name: "Chiefdom"
