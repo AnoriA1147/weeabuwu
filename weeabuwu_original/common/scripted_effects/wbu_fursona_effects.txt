@@ -1,0 +1,262 @@
+﻿#This is basically a manager system that automatically removes modifiers before adding new ones.
+#heavily copied from base Bakhti scripted effects
+wbu_set_fursona_color_effect = {
+    if = {
+        limit = { faith = faith:furry }
+        if = {
+			limit = {
+				has_character_modifier = wbu_fursona_color_earth
+			}
+			remove_character_modifier = wbu_fursona_color_earth
+			#add_piety = massive_piety_loss
+            #removed piety loss. changing fursonas is frequent in lore.
+		}
+        else_if = {
+			limit = {
+				has_character_modifier = wbu_fursona_color_snow
+			}
+			remove_character_modifier = wbu_fursona_color_snow
+		}
+        else_if = {
+			limit = {
+				has_character_modifier = wbu_fursona_color_night
+			}
+			remove_character_modifier = wbu_fursona_color_night
+		}
+        else_if = {
+			limit = {
+				has_character_modifier = wbu_fursona_color_sparkle
+			}
+			remove_character_modifier = wbu_fursona_color_sparkle
+		}
+        else_if = {
+			limit = {
+				has_character_modifier = wbu_fursona_color_fire
+			}
+			remove_character_modifier = wbu_fursona_color_fire
+		}
+    }
+    else = {
+		# If no current bhakti, cost is reduced.
+		add_piety = medium_piety_loss
+	}
+
+	add_character_modifier = $FURSONA_COLOR$
+}
+
+wbu_set_fursona_animal_effect = {
+    #i hate this so much
+    if = {
+        limit = { faith = faith:furry }
+        if = {
+            limit = {
+                has_character_modifier = wbu_lustful_poetry_modifier
+            }
+            remove_character_modifier = wbu_lustful_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_chaste_poetry_modifier
+            }
+            remove_character_modifier = wbu_chaste_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_gluttonous_poetry_modifier
+            }
+            remove_character_modifier = wbu_gluttonous_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_temperate_poetry_modifier
+            }
+            remove_character_modifier = wbu_temperate_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_lazy_poetry_modifier
+            }
+            remove_character_modifier = wbu_lazy_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_diligent_poetry_modifier
+            }
+            remove_character_modifier = wbu_diligent_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_wrathful_poetry_modifier
+            }
+            remove_character_modifier = wbu_wrathful_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_calm_poetry_modifier
+            }
+            remove_character_modifier = wbu_calm_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_patient_poetry_modifier
+            }
+            remove_character_modifier = wbu_patient_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_impatient_poetry_modifier
+            }
+            remove_character_modifier = wbu_impatient_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_arrogant_poetry_modifier
+            }
+            remove_character_modifier = wbu_arrogant_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_humble_poetry_modifier
+            }
+            remove_character_modifier = wbu_humble_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_deceitful_poetry_modifier
+            }
+            remove_character_modifier = wbu_deceitful_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_honest_poetry_modifier
+            }
+            remove_character_modifier = wbu_honest_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_craven_poetry_modifier
+            }
+            remove_character_modifier = wbu_craven_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_brave_poetry_modifier
+            }
+            remove_character_modifier = wbu_brave_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_shy_poetry_modifier
+            }
+            remove_character_modifier = wbu_shy_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_gregarious_poetry_modifier
+            }
+            remove_character_modifier = wbu_gregarious_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_ambitious_poetry_modifier
+            }
+            remove_character_modifier = wbu_ambitious_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_content_poetry_modifier
+            }
+            remove_character_modifier = wbu_content_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_arbitrary_poetry_modifier
+            }
+            remove_character_modifier = wbu_arbitrary_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_just_poetry_modifier
+            }
+            remove_character_modifier = wbu_just_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_cynical_poetry_modifier
+            }
+            remove_character_modifier = wbu_cynical_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_zealous_poetry_modifier
+            }
+            remove_character_modifier = wbu_zealous_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_paranoid_poetry_modifier
+            }
+            remove_character_modifier = wbu_paranoid_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_trusting_poetry_modifier
+            }
+            remove_character_modifier = wbu_trusting_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_compassionate_poetry_modifier
+            }
+            remove_character_modifier = wbu_compassionate_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_callous_poetry_modifier
+            }
+            remove_character_modifier = wbu_callous_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_sadistic_poetry_modifier
+            }
+            remove_character_modifier = wbu_sadistic_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_stubborn_poetry_modifier
+            }
+            remove_character_modifier = wbu_stubborn_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_fickle_poetry_modifier
+            }
+            remove_character_modifier = wbu_fickle_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_eccentric_poetry_modifier
+            }
+            remove_character_modifier = wbu_eccentric_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_vengeful_poetry_modifier
+            }
+            remove_character_modifier = wbu_vengeful_poetry_modifier
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_forgiving_poetry_modifier
+            }
+            remove_character_modifier = wbu_forgiving_poetry_modifier
+        }
+    }
+    else = {
+		# If no current bhakti, cost is reduced.
+		add_piety = medium_piety_loss
+	}
+
+    add_character_modifier = $FURSONA_ANIMAL$
+}

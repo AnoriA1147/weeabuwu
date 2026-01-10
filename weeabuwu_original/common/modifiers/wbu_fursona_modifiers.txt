@@ -1,0 +1,415 @@
+﻿#####
+# Fursona color aspects
+#####
+#TODO playtest and balance these
+wbu_fursona_color_earth = {
+    icon = cat_positive
+    stewardship_per_piety_level = 1
+	monthly_income_mult = 0.1
+}
+
+wbu_fursona_color_snow = {
+    icon = cat_positive
+    learning_per_piety_level = 1
+    health = 0.25
+}
+
+wbu_fursona_color_night = {
+    icon = cat_positive
+    intrigue_per_piety_level = 1
+    owned_hostile_scheme_success_chance_add = 10
+}
+
+wbu_fursona_color_sparkle = {
+    icon = cat_positive
+    diplomacy_per_piety_level = 1
+    stress_loss_mult = .33
+    stress_gain_mult = -.33
+}
+
+wbu_fursona_color_fire = {
+    icon = cat_positive
+    martial_per_piety_level = 1
+    prowess_per_piety_level = 1
+}
+
+
+
+#####
+# Fursona animals
+#####
+# values entirely copied from compose_poetry's modifiers, make propietary later
+#TODO assign to animals, playtest, balance, make propietary
+wbu_lustful_poetry_modifier = {
+	icon = cat_positive
+	fertility = 0.15
+	intrigue = 1
+	seduce_scheme_phase_duration_add = -50
+}
+
+wbu_chaste_poetry_modifier = {
+	icon = cat_positive
+	fertility = -0.15
+	learning = 1
+	seduce_scheme_phase_duration_add = 50
+}
+
+wbu_gluttonous_poetry_modifier = {
+	icon = cat_positive
+	stewardship = -1
+	stress_loss_mult = 0.1
+	attraction_opinion = -5
+	scheme_discovery_chance_mult = 0.05
+}
+
+wbu_temperate_poetry_modifier = {
+	icon = cat_positive
+	stewardship = 1
+	health = 0.15
+
+	courtly_opinion = -5
+}
+
+wbu_greedy_poetry_modifier = {
+	icon = cat_positive
+	diplomacy = -1
+
+	monthly_income_mult = 0.05
+	monthly_income_per_stress_level_mult = 0.05
+	courtly_opinion = -1
+}
+
+wbu_generous_poetry_modifier = {
+	icon = cat_positive
+	diplomacy = 2
+	monthly_income_mult = -0.1
+	courtly_opinion = -5
+}
+
+wbu_lazy_poetry_modifier = {
+	icon = cat_positive
+	diplomacy = -1
+	intrigue = -1
+	stewardship = -1
+	martial = -1
+	learning = -1
+	character_travel_speed = -5
+	stress_loss_mult = 0.5
+}
+
+wbu_diligent_poetry_modifier = {
+	icon = cat_positive
+	diplomacy = 1
+	stewardship = 2
+	learning = 2
+
+	parochial_opinion = 5
+
+	stress_loss_mult = -0.5
+}
+
+wbu_wrathful_poetry_modifier = {
+	icon = cat_positive
+	diplomacy = -1
+	martial = 2
+	intrigue = -1
+	dread_decay_mult = 0.5
+
+	parochial_opinion = -5
+	glory_hound_opinion = 5
+
+	courtly_opinion = -5
+}
+
+wbu_calm_poetry_modifier = {
+	icon = cat_positive
+	diplomacy = 1
+	intrigue = 1
+	scheme_discovery_chance_mult = 0.1
+	stress_loss_mult = 0.1
+	dread_decay_mult = 0.5
+}
+
+wbu_patient_poetry_modifier = {
+	icon = cat_positive
+	learning = 1
+	enemy_hostile_scheme_phase_duration_add = miniscule_scheme_phase_duration_malus_value
+	parochial_opinion = 5
+	liege_opinion = 5
+}
+
+wbu_impatient_poetry_modifier = {
+	icon = cat_positive
+	learning = -1
+	monthly_prestige_gain_mult = 0.2
+	hostile_scheme_phase_duration_add = minor_scheme_phase_duration_bonus_value
+	character_travel_speed_mult = 0.15
+	character_travel_safety = -5
+	courtly_opinion = -5
+	parochial_opinion = -5
+	opinion_of_liege = -5
+}
+
+wbu_arrogant_poetry_modifier = {
+	icon = cat_positive
+	monthly_prestige = 1
+	owned_scheme_secrecy_add = -5
+	opinion_of_liege = -5
+	opinion_of_vassal = -5
+}
+
+wbu_humble_poetry_modifier = {
+	icon = cat_positive
+	monthly_piety = 0.5
+	clergy_opinion = 5
+	zealot_opinion = 5
+	opinion_of_liege = 5
+	opinion_of_vassal = 5
+}
+
+wbu_deceitful_poetry_modifier = {
+	icon = cat_positive
+	diplomacy = -1
+	intrigue = 2
+	hostile_scheme_phase_duration_add = miniscule_scheme_phase_duration_bonus_value
+}
+
+wbu_honest_poetry_modifier = {
+	icon = cat_positive
+	diplomacy = 1
+	intrigue = -2
+	courtly_opinion = 5
+}
+
+wbu_craven_poetry_modifier = {
+	icon = cat_positive
+	martial = -1
+	prowess = -1
+	intrigue = 1
+
+	attraction_opinion = -5
+	glory_hound_opinion = -10
+	courtly_opinion = -5
+	owned_scheme_secrecy_add = 5
+	enemy_hostile_scheme_phase_duration_add = miniscule_scheme_phase_duration_malus_value
+	character_travel_safety_mult = 0.15
+}
+
+wbu_brave_poetry_modifier = {
+	icon = cat_positive
+	martial = 1
+	prowess = 2
+
+	attraction_opinion = 5
+	glory_hound_opinion = 5
+}
+
+wbu_shy_poetry_modifier = {
+	icon = cat_positive
+	diplomacy = -1
+	learning = 1
+	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
+	personal_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
+	learn_language_scheme_phase_duration_add = medium_scheme_phase_duration_bonus_value
+	character_travel_safety_mult = 0.15
+
+	attraction_opinion = -5
+	parochial_opinion = 5
+}
+
+wbu_gregarious_poetry_modifier = {
+	icon = cat_positive
+	martial = 1
+	prowess = 2
+
+	attraction_opinion = 5
+	glory_hound_opinion = 5
+}
+
+wbu_ambitious_poetry_modifier = {
+	icon = cat_positive
+	intrigue = 1
+	stewardship = 1
+	diplomacy = 1
+	martial = 1
+	learning = 1
+	prowess = 1
+
+	opinion_of_liege = -19
+	glory_hound_opinion = 5
+
+	stress_gain_mult = 0.20
+
+	attraction_opinion = 5
+	glory_hound_opinion = 5
+}
+
+wbu_content_poetry_modifier = {
+	icon = cat_positive
+	intrigue = -1
+	learning = 1
+
+	opinion_of_liege = 15
+	opinion_of_vassal = 5
+	parochial_opinion = 5
+
+	stress_loss_mult = 0.1
+}
+
+wbu_arbitrary_poetry_modifier = {
+	icon = cat_positive
+	stewardship = -1
+	learning = -1
+	intrigue = 2
+
+	stress_gain_mult = -0.5
+	dread_baseline_add = 10
+
+	vassal_opinion = -5
+}
+
+wbu_just_poetry_modifier = {
+	icon = cat_positive
+	stewardship = 1
+	learning = 1
+	intrigue = -2
+
+	parochial_opinion = 10
+	minority_opinion = 10
+}
+
+wbu_cynical_poetry_modifier = {
+	icon = cat_positive
+	intrigue = 1
+	learning = 1
+
+	monthly_piety_gain_mult = -0.1
+	faith_conversion_piety_cost_mult = -0.1
+
+	zealot_opinion = -10
+}
+
+wbu_zealous_poetry_modifier = {
+	icon = cat_positive
+	martial = 1
+
+	monthly_piety_gain_mult = 0.1
+	faith_conversion_piety_cost_mult = 0.1
+
+	same_faith_opinion = 10
+	opinion_of_different_faith = -25
+	zealot_opinion = 10
+}
+
+wbu_paranoid_poetry_modifier = {
+	icon = cat_positive
+	diplomacy = -1
+	intrigue = 2
+
+	stress_gain_mult = 0.5
+	dread_gain_mult = 0.15
+
+	scheme_discovery_chance_mult = 0.1
+	enemy_personal_scheme_success_chance_add = -15
+
+	character_travel_speed = -5
+	character_travel_safety = 5
+}
+
+wbu_trusting_poetry_modifier = {
+	icon = cat_positive
+	diplomacy = 1
+	intrigue = -1
+
+	enemy_hostile_scheme_success_chance_add = 10
+
+	opinion_of_liege = 10
+	opinion_of_vassal = 10
+	character_travel_safety = -5
+}
+
+wbu_compassionate_poetry_modifier = {
+	icon = cat_positive
+	diplomacy = 1
+	intrigue = -1
+	minority_opinion = 10
+	courtly_opinion = 5
+
+	dread_decay_mult = 1
+	dread_baseline_add = -10
+
+	attraction_opinion = 5
+}
+
+wbu_callous_poetry_modifier = {
+	icon = cat_positive
+	diplomacy = -1
+	intrigue = 1
+
+	courtly_opinion = -5
+
+	tyranny_gain_mult = -0.1
+	dread_gain_mult = 0.15
+	dread_decay_mult = -0.15
+
+	attraction_opinion = -5
+	close_relative_opinion = -5
+}
+
+wbu_sadistic_poetry_modifier = {
+	icon = cat_positive
+	intrigue = 1
+	prowess = 2
+
+	dread_baseline_add = 25
+
+	general_opinion = -5
+
+	courtly_opinion = -5
+}
+
+wbu_stubborn_poetry_modifier = {
+	icon = cat_positive
+	stewardship = 2
+	negate_health_penalty_add = 0.15
+	liege_opinion = -5
+	minority_opinion = -5
+	parochial_opinion = -5
+	courtly_opinion = -5
+}
+
+wbu_fickle_poetry_modifier = {
+	icon = cat_positive
+	intrigue = 1
+	diplomacy = 1
+	stewardship = -1
+	enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
+}
+
+wbu_eccentric_poetry_modifier = {
+	icon = cat_positive
+	learning = 1
+	diplomacy = -1
+
+	stress_gain_mult = 0.5
+	stress_loss_mult = 0.5
+	monthly_lifestyle_xp_gain_mult = 0.1
+}
+
+wbu_vengeful_poetry_modifier = {
+	icon = cat_positive
+	diplomacy = -1
+	intrigue = 1
+	prowess = 1
+	dread_gain_mult = 0.10
+}
+
+wbu_forgiving_poetry_modifier = {
+	icon = cat_positive
+	diplomacy = 1
+	intrigue = -1
+	learning = 1
+
+	prisoner_opinion = 10
+	minority_opinion = 10
+}

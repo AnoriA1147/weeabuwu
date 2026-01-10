@@ -1,0 +1,44 @@
+﻿#based off of the Patron Guru and similar Bakhti-based decisions
+wbu_design_fursona = {
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_personal_religious.dds"
+	}
+
+    #localization
+ 	desc = wbu_design_fursona_desc
+ 	selection_tooltip = wbu_design_fursona_tooltip
+
+	decision_group_type = major
+
+	is_shown = { #conditions for the decision to be shown at all in the decision menu
+		OR = {
+			root.faith = faith:furry
+			ate_foundational_faith_trigger = { FAITH = faith:furry }
+		}
+	}
+
+	cooldown = { years = 5 } #trying normal cooldown method rather than custom flag method
+
+	is_valid = {
+	}
+
+	is_valid_showing_failures_only = {
+        is_at_war = no #must be at piece to design fursona
+	}
+
+	effect = {
+        #a custom_tooltip effect is simply a localization that shows up in the effects list
+		custom_tooltip = wbu_design_fursona_effect_tooltip
+		trigger_event = wbu_religious_decisions.100
+	}
+
+	ai_check_interval = 60 #ai will check every N months, 0 means ai never checks
+
+	ai_potential = {
+		piety >= minor_piety_value
+	}
+
+	ai_will_do = {
+		base = 100 # 100% chance the ai will not back out
+	}
+}

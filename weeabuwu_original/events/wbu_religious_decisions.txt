@@ -1,0 +1,478 @@
+﻿namespace = wbu_religious_decisions
+
+#####
+#DESIGN FURSONA DECISION
+#####
+
+#First event for the "Design Fursona" decision (wbu_design_fursona), an immersive description and a simple continue vs back out option
+wbu_religious_decisions.100 = {
+    title = wbu_religious_decisions.100.t
+	desc = wbu_religious_decisions.100.desc
+
+    #appearance of the event pop-up
+    type = character_event #standard pop-up event, rather than a letter or a duel
+	hidden = no
+    theme = faith
+    override_background = study
+	left_portrait = {
+		character = root
+		animation = writing #looks close enough to drawing
+	}
+
+    #continue the decision
+    option = {
+        name = wbu_religious_decisions.100.go
+        trigger_event = wbu_religious_decisions.101
+    }
+
+    #back out of the decision
+    option = {
+        #name = wbu_religious_decisions.100.optout
+        name = religious_decision.0101.optout #use existing localization
+        ai_chance = { factor = 0 } #ai will never choose this option
+    }
+}
+
+#second event for "Design Fursona", where the player chooses a color aspect of their fursona
+wbu_religious_decisions.101 = {
+    title = wbu_religious_decisions.101.t
+    desc = wbu_religious_decisions.101.desc
+
+    #appearance of the event pop-up
+    type = character_event #standard pop-up event, rather than a letter or a duel
+	hidden = no
+    theme = faith
+    override_background = study
+	left_portrait = {
+		character = root
+		animation = writing #looks close enough to drawing
+	}
+
+    #options
+    #natural / earthy colors
+    # WHAT THE FUCK IS A SCRIPTED EFFECT?!?!?!?
+    option = {
+        name = wbu_religious_decisions.101.earth
+        wbu_set_fursona_color_effect = { FURSONA_COLOR = wbu_fursona_color_earth }
+    }
+
+    #white / light colors
+    option = {
+        name = wbu_religious_decisions.101.snow
+        wbu_set_fursona_color_effect = { FURSONA_COLOR = wbu_fursona_color_snow }
+    }
+
+    #dark / shadowy colors
+    option = {
+        name = wbu_religious_decisions.101.night
+        wbu_set_fursona_color_effect = { FURSONA_COLOR = wbu_fursona_color_night }
+    }
+
+    #sparkledog colors
+    option = {
+        name = wbu_religious_decisions.101.sparkle
+        wbu_set_fursona_color_effect = { FURSONA_COLOR = wbu_fursona_color_sparkle }
+    }
+
+    #fire / ruddy colors
+    option = {
+        name = wbu_religious_decisions.101.fire
+        wbu_set_fursona_color_effect = { FURSONA_COLOR = wbu_fursona_color_fire }
+    }
+
+    #after is a block of effects that happen after any option is chosen. It's counterpart is immediate.
+    after = {
+        add_piety = 100 #reward for completing this phase
+        trigger_event = wbu_religious_decisions.102
+    }
+}
+
+#third event for "Design Fursona", where the player chooses an animal for their fursona
+wbu_religious_decisions.102 = {
+    title = wbu_religious_decisions.102.t
+    desc = wbu_religious_decisions.102.desc
+
+    #appearance of the event pop-up
+    type = character_event #standard pop-up event, rather than a letter or a duel
+    hidden = no
+    theme = faith
+    override_background = study
+    left_portrait = {
+        character = root
+        animation = writing #looks close enough to drawing
+    }
+
+    #options
+    #*should* have at most 8 (4 traits) options in normal gameplay, though technically number of traits is unlimited.
+    option = {
+        name = wbu_religious_decisions.102.done
+        #placeholder no effects, just a continue button
+    }
+    option = {
+        name = wbu_religious_decisions.102.lustful
+        trigger = {
+            OR = {
+                has_trait = lustful
+                has_trait = chaste
+            }
+		}
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_lustful_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.chaste
+        trigger = {
+            OR = {
+                has_trait = lustful
+                has_trait = chaste
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_chaste_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.gluttonous
+        trigger = {
+            OR = {
+                has_trait = gluttonous
+                has_trait = temperate
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_gluttonous_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.temperate
+        trigger = {
+            OR = {
+                has_trait = gluttonous
+                has_trait = temperate
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_temperate_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.greedy
+        trigger = {
+            OR = {
+                has_trait = greedy
+                has_trait = generous
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_greedy_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.generous
+        trigger = {
+            OR = {
+                has_trait = greedy
+                has_trait = generous
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_generous_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.lazy
+        trigger = {
+            OR = {
+                has_trait = lazy
+                has_trait = diligent
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_lazy_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.diligent
+        trigger = {
+            OR = {
+                has_trait = lazy
+                has_trait = diligent
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_diligent_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.wrathful
+        trigger = {
+            OR = {
+                has_trait = wrathful
+                has_trait = calm
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_wrathful_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.calm
+        trigger = {
+            OR = {
+                has_trait = wrathful
+                has_trait = calm
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_calm_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.patient
+        trigger = {
+            OR = {
+                has_trait = patient
+                has_trait = impatient
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_patient_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.impatient
+        trigger = {
+            OR = {
+                has_trait = patient
+                has_trait = impatient
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_impatient_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.arrogant
+        trigger = {
+            OR = {
+                has_trait = arrogant
+                has_trait = humble
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_arrogant_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.humble
+        trigger = {
+            OR = {
+                has_trait = arrogant
+                has_trait = humble
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_humble_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.deceitful
+        trigger = {
+            OR = {
+                has_trait = deceitful
+                has_trait = honest
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_deceitful_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.honest
+        trigger = {
+            OR = {
+                has_trait = deceitful
+                has_trait = honest
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_honest_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.craven
+        trigger = {
+            OR = {
+                has_trait = craven
+                has_trait = brave
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_craven_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.brave
+        trigger = {
+            OR = {
+                has_trait = craven
+                has_trait = brave
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_brave_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.shy
+        trigger = {
+            OR = {
+                has_trait = shy
+                has_trait = gregarious
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_shy_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.gregarious
+        trigger = {
+            OR = {
+                has_trait = shy
+                has_trait = gregarious
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_gregarious_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.ambitious
+        trigger = {
+            OR = {
+                has_trait = ambitious
+                has_trait = content
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_ambitious_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.content
+        trigger = {
+            OR = {
+                has_trait = ambitious
+                has_trait = content
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_content_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.arbitrary
+        trigger = {
+            OR = {
+                has_trait = arbitrary
+                has_trait = just
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_arbitrary_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.just
+        trigger = {
+            OR = {
+                has_trait = arbitrary
+                has_trait = just
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_just_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.cynical
+        trigger = {
+            OR = {
+                has_trait = cynical
+                has_trait = zealous
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_cynical_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.zealous
+        trigger = {
+            OR = {
+                has_trait = cynical
+                has_trait = zealous
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_zealous_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.paranoid
+        trigger = {
+            OR = {
+                has_trait = paranoid
+                has_trait = trusting
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_paranoid_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.trusting
+        trigger = {
+            OR = {
+                has_trait = paranoid
+                has_trait = trusting
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_trusting_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.vengeful
+        trigger = {
+            OR = {
+                has_trait = vengeful
+                has_trait = forgiving
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_vengeful_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.forgiving
+        trigger = {
+            OR = {
+                has_trait = vengeful
+                has_trait = forgiving
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_forgiving_poetry_modifier }
+    }
+
+    #The triad traits break my system of pairs
+    option = {
+        name = wbu_religious_decisions.102.compassionate
+        trigger = {
+            OR = {
+                has_trait = compassionate
+                has_trait = callous
+                has_trait = sadistic
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_compassionate_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.callous
+        trigger = {
+            OR = {
+                has_trait = compassionate
+                has_trait = callous
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_callous_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.sadistic
+        trigger = {
+            OR = {
+                has_trait = compassionate
+                has_trait = sadistic
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_sadistic_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.stubborn
+        trigger = {
+            OR = {
+                has_trait = stubborn
+                has_trait = eccentric
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_stubborn_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.fickle
+        trigger = {
+            OR = {
+                has_trait = fickle
+                has_trait = stubborn
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fickle_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.102.eccentric
+        trigger = {
+            OR = {
+                has_trait = eccentric
+                has_trait = fickle
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_eccentric_poetry_modifier }
+    }
+
+    after = {
+        add_piety = 100 #reward for completing the decision
+    }
+}
