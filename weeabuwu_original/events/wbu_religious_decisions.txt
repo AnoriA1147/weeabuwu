@@ -4,7 +4,7 @@
 #DESIGN FURSONA DECISION
 #####
 
-#First event for the "Design Fursona" decision (wbu_design_fursona), an immersive description and a simple continue vs back out option
+#first event for the "Design Fursona" decision (wbu_design_fursona), an immersive description and a simple continue vs back out option
 wbu_religious_decisions.100 = {
     title = wbu_religious_decisions.100.t
 	desc = wbu_religious_decisions.100.desc
@@ -29,6 +29,7 @@ wbu_religious_decisions.100 = {
     option = {
         #name = wbu_religious_decisions.100.optout
         name = religious_decision.0101.optout #use existing localization
+        custom_tooltip = wbu_religious_decisions.100.optout_cooldown_warning_tooltip
         ai_chance = { factor = 0 } #ai will never choose this option
     }
 }
@@ -56,7 +57,7 @@ wbu_religious_decisions.101 = {
         wbu_set_fursona_color_effect = { FURSONA_COLOR = wbu_fursona_color_earth }
     }
 
-    #white / light colors
+    #white / pastel colors
     option = {
         name = wbu_religious_decisions.101.snow
         wbu_set_fursona_color_effect = { FURSONA_COLOR = wbu_fursona_color_snow }
@@ -80,7 +81,7 @@ wbu_religious_decisions.101 = {
         wbu_set_fursona_color_effect = { FURSONA_COLOR = wbu_fursona_color_fire }
     }
 
-    #after is a block of effects that happen after any option is chosen. It's counterpart is immediate.
+    #after is a block of effects that happen after any option is chosen. Its counterpart is immediate.
     after = {
         add_piety = 100 #reward for completing this phase
         trigger_event = wbu_religious_decisions.102
@@ -104,10 +105,6 @@ wbu_religious_decisions.102 = {
 
     #options
     #*should* have at most 8 (4 traits) options in normal gameplay, though technically number of traits is unlimited.
-    option = {
-        name = wbu_religious_decisions.102.done
-        #placeholder no effects, just a continue button
-    }
     option = {
         name = wbu_religious_decisions.102.lustful
         trigger = {

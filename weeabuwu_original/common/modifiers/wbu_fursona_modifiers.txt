@@ -23,8 +23,8 @@ wbu_fursona_color_night = {
 wbu_fursona_color_sparkle = {
     icon = cat_positive
     diplomacy_per_piety_level = 1
-    stress_loss_mult = .33
-    stress_gain_mult = -.33
+    stress_loss_mult = 0.33
+    stress_gain_mult = -0.33
 }
 
 wbu_fursona_color_fire = {

@@ -1,0 +1,50 @@
+﻿l_english:
+# l_spanish:
+# l_german:
+# l_french:
+# l_russian:
+# l_simp_chinese:
+# l_korean:
+
+ #Note: debug decisions are located in wbu_miscellaneous_l_english.yml
+ #Decisions have at least a name, tooltip, description, and confirmation text.
+ #Events habe at least a title, description, and options.
+
+ #Design a Fursona decision
+ wbu_design_fursona: "Design a Fursona"
+ wbu_design_fursona_tooltip: "Design a fursona your unique identity."
+ wbu_design_fursona_desc: "Since the age of [ROOT.Char.GetFaith.PantheonTerm], creating a furred form, a fursona, to represent onesself has been one of the central traditions. It is now time for me to engage in this holy act and create a fursona of my own."
+ wbu_design_fursona_confirm: "$wbu_design_fursona$" #this reuses the name key
+ wbu_design_fursona_effect_tooltip: "You will have a chance to choose an animal and a color aspect to emphasise your identity."
+
+ #first event for the "Design Fursona" decision
+ wbu_religious_decisions.100.t: "Designing a Fursona"
+ wbu_religious_decisions.100.desc: "Designing a fursona is a sacred act in the [ROOT.Char.GetFaith.GetAdjective] tradition. Fursonas are supposed to bring comfort to the owner's identity, allowing one to live their life fuller and more authentically. It is an act that should be done with care, expression, and creativity."
+ wbu_religious_decisions.100.go: "I pick up my pen and pigments."
+ wbu_religious_decisions.100.optout: "$religious_decision.0101.optout$" #this reuses existing localization
+ wbu_religious_decisions.100.optout_cooldown_warning_tooltip: "@alert_icon! You will not be able to take this decision for another five years."
+
+ #second event for the "Design Fursona" decision
+ wbu_religious_decisions.101.t: "Fursona: Color Aspect"
+ wbu_religious_decisions.101.desc: "Although a fursona can be of any colors one desires, certain pallets are more harmonious and better align with certain identities. \nThere are five main pallets, each said to be aligned with a different element, skill, realm, biome, historical trend, or some other part of a set of five."
+ wbu_religious_decisions.101.earth: "I will use natural tones, from earth and the forest."
+ wbu_religious_decisions.101.snow: "I will use pastels and white, like those of gentle morning snow."
+ wbu_religious_decisions.101.night: "I will use dark colors, blending into shadows of the night."
+ wbu_religious_decisions.101.fire: "I will use ruddy and firely colors, like embers and autumn leaves."
+ wbu_religious_decisions.101.sparkle: "I will use saturated and vibrant colors like the “Sparkledogs” of old."
+
+ #third (and most painful) event for the "Design Fursona" decision
+ wbu_religious_decisions.102.t: "Fursona: Animal Form"
+ wbu_religious_decisions.102.desc: "Now that I have chosen a pallet, I now should choose an animal to base my fursona on. There are countless animals to choose from, but some of them better resonate with my chosen identity and values. Another consideration: while most [ROOT.Char.GetFaith.GetAdherentNamePlural] choose an animal that aligns with their personality, some choose to foil themselves instead.""
+ #note: I'm making the option localization the same as the modifiers' names for simplicity
+
+ #MODIFIERS
+ wbu_fursona_color_earth: "Fursona: Earthy"
+ wbu_fursona_color_snow: "Fursona: Pastel and White"
+ wbu_fursona_color_night: "Fursona: Dark and Black"
+ wbu_fursona_color_fire: "Fursona: Firey"
+ wbu_fursona_color_sparkle: "Fursona: Sparkly"
+ #TODO: do this 36 times over for all the animal forms
+
+
+
