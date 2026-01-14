@@ -88,8 +88,117 @@ wbu_religious_decisions.101 = {
     }
 }
 
-#third event for "Design Fursona", where the player chooses an animal for their fursona
+#reworked third event for "Design Fursona", where the player chooses to align with or to go against their personality traits
 wbu_religious_decisions.102 = {
+    title = wbu_religious_decisions.102.t
+    desc = wbu_religious_decisions.102.desc
+
+    #appearance of the event pop-up
+    type = character_event #standard pop-up event, rather than a letter or a duel
+    hidden = no
+    theme = faith
+    override_background = study
+    left_portrait = {
+        character = root
+        animation = writing #looks close enough to drawing
+    }
+
+    #options
+    option = {
+        name = wbu_religious_decisions.102.align
+        #HOW THE FUCK DOES SCOPE WORK
+        #save_scope_value_as = {
+        #    name = wbu_religious_decisions_102_choice_value
+        #    value = flag:align
+        #}
+        #save_scope_as = wbu_religious_decisions_102_align # BAD as it removes ROOT as scope
+        set_variable = {
+            name = wbu_religious_decisions_102_choice
+            value = flag:align
+        }
+    }
+    option = {
+        name = wbu_religious_decisions.102.oppose
+        #save_scope_value_as = {
+        #    name = wbu_religious_decisions_102_choice_value
+        #    value = flag:oppose
+        #}
+        #save_scope_as = wbu_religious_decisions_102_oppose
+        set_variable = {
+            name = wbu_religious_decisions_102_choice
+            value = flag:oppose
+        }
+    }
+    after = {
+        trigger_event = wbu_religious_decisions.103
+    }
+}
+
+#reworked fourth event for "Design Fursona", where the player chooses an animal for their fursona based on their previous choice
+wbu_religious_decisions.103 = {
+    title = wbu_religious_decisions.103.t
+    desc = wbu_religious_decisions.103.desc
+
+    #appearance of the event pop-up
+    type = character_event #standard pop-up event, rather than a letter or a duel
+    hidden = no
+    theme = faith
+    override_background = study
+    left_portrait = {
+        character = root
+        animation = writing #looks close enough to drawing
+    }
+
+    #options
+    #reworked to now utilize switch and scope
+    #debug options for testing what works
+    option = {
+        name = wbu_religious_decisions.103.go
+    }
+    option = {
+        name = wbu_religious_decisions.103.greg
+        trigger = {
+            OR = {
+                AND = {
+                    has_trait = gregarious
+                    #scope:wbu_religious_decisions_102_choice_value = flag:align
+                    var:wbu_religious_decisions_102_choice = flag:align
+                }
+                AND = {
+                    has_trait = shy
+                    #scope:wbu_religious_decisions_102_choice_value = flag:oppose
+                    var:wbu_religious_decisions_102_choice = flag:oppose
+                }
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_gregarious_poetry_modifier }
+    }
+    option = {
+        name = wbu_religious_decisions.103.shy
+        trigger = {
+            OR = {
+                AND = {
+                    has_trait = shy
+                    #scope:wbu_religious_decisions_102_choice_value = flag:align
+                    var:wbu_religious_decisions_102_choice = flag:align
+                }
+                AND = {
+                    has_trait = gregarious
+                    var:wbu_religious_decisions_102_choice = flag:oppose
+                    #scope:wbu_religious_decisions_102_choice_value = flag:oppose
+                }
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_shy_poetry_modifier }
+    }
+    after = {
+        remove_variable = wbu_religious_decisions_102_choice
+    }
+}
+
+
+#third event for "Design Fursona", where the player chooses an animal for their fursona
+wbu_religious_decisions.104 = {
     title = wbu_religious_decisions.102.t
     desc = wbu_religious_decisions.102.desc
 
