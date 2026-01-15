@@ -21,3 +21,7 @@
  wbu_debug_adopt_therian_tooltip: "\[DEBUG\] Convert yourself and your family to the Therian faith."
  wbu_debug_adopt_therian_desc: "Instantly embrace the $therian_adj$ lifestyle and convert to $therian$, along with your family."
  wbu_debug_adopt_therian_confirm: "Glory to $therian_agrios$!"
+
+ #Special term
+ wbu_special_term_fursona: "fursona"
+ wbu_special_term_fursona_plural: "fursonas"
