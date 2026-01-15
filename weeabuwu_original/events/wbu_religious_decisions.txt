@@ -154,7 +154,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_gregarious_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_gregarious }
     }
     option = {
         name = wbu_religious_decisions.103.shy
@@ -170,7 +170,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_shy_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_shy }
     }
     option = {
         name = wbu_religious_decisions.102.lustful
@@ -186,7 +186,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_lustful_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_lustful }
     }
     option = {
         name = wbu_religious_decisions.102.chaste
@@ -202,7 +202,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_chaste_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_chaste }
     }
     option = {
         name = wbu_religious_decisions.102.gluttonous
@@ -218,7 +218,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_gluttonous_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_gluttonous }
     }
     option = {
         name = wbu_religious_decisions.102.temperate
@@ -234,7 +234,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_temperate_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_temperate }
     }
     option = {
         name = wbu_religious_decisions.102.greedy
@@ -250,7 +250,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_greedy_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_greedy }
     }
     option = {
         name = wbu_religious_decisions.102.generous
@@ -266,7 +266,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_generous_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_generous }
     }
     option = {
         name = wbu_religious_decisions.102.lazy
@@ -282,7 +282,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_lazy_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_lazy }
     }
     option = {
         name = wbu_religious_decisions.102.diligent
@@ -298,7 +298,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_diligent_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_diligent }
     }
     option = {
         name = wbu_religious_decisions.102.wrathful
@@ -314,7 +314,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_wrathful_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_wrathful }
     }
     option = {
         name = wbu_religious_decisions.102.calm
@@ -330,7 +330,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_calm_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_calm }
     }
     option = {
         name = wbu_religious_decisions.102.patient
@@ -346,7 +346,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_patient_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_patient }
     }
     option = {
         name = wbu_religious_decisions.102.impatient
@@ -362,7 +362,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_impatient_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_impatient }
     }
     option = {
         name = wbu_religious_decisions.102.arrogant
@@ -378,7 +378,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_arrogant_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_arrogant }
     }
     option = {
         name = wbu_religious_decisions.102.humble
@@ -394,7 +394,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_humble_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_humble }
     }
     option = {
         name = wbu_religious_decisions.102.deceitful
@@ -410,7 +410,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_deceitful_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_deceitful }
     }
     option = {
         name = wbu_religious_decisions.102.honest
@@ -426,7 +426,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_honest_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_honest }
     }
     option = {
         name = wbu_religious_decisions.102.craven
@@ -442,7 +442,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_craven_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_craven }
     }
     option = {
         name = wbu_religious_decisions.102.brave
@@ -458,7 +458,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_brave_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_brave }
     }
     option = {
         name = wbu_religious_decisions.102.ambitious
@@ -474,7 +474,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_ambitious_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_ambitious }
     }
     option = {
         name = wbu_religious_decisions.102.content
@@ -490,7 +490,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_content_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_content }
     }
     option = {
         name = wbu_religious_decisions.102.arbitrary
@@ -506,7 +506,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_arbitrary_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_arbitrary }
     }
     option = {
         name = wbu_religious_decisions.102.just
@@ -522,7 +522,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_just_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_just }
     }
     option = {
         name = wbu_religious_decisions.102.cynical
@@ -538,7 +538,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_cynical_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_cynical }
     }
     option = {
         name = wbu_religious_decisions.102.zealous
@@ -554,7 +554,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_zealous_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_zealous }
     }
     option = {
         name = wbu_religious_decisions.102.paranoid
@@ -570,7 +570,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_paranoid_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_paranoid }
     }
     option = {
         name = wbu_religious_decisions.102.trusting
@@ -586,7 +586,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_trusting_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_trusting }
     }
     option = {
         name = wbu_religious_decisions.102.vengeful
@@ -602,7 +602,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_vengeful_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_vengeful }
     }
     option = {
         name = wbu_religious_decisions.102.forgiving
@@ -618,7 +618,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_forgiving_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_forgiving }
     }
 
     #The triad traits break my system of pairs
@@ -640,7 +640,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_compassionate_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_compassionate }
     }
     option = {
         name = wbu_religious_decisions.102.callous
@@ -656,7 +656,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_callous_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_callous }
     }
     option = {
         name = wbu_religious_decisions.102.sadistic
@@ -672,7 +672,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_sadistic_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_sadistic }
     }
     option = {
         name = wbu_religious_decisions.102.stubborn
@@ -688,7 +688,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_stubborn_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_stubborn }
     }
     option = {
         name = wbu_religious_decisions.102.fickle
@@ -704,7 +704,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fickle_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_fickle }
     }
     option = {
         name = wbu_religious_decisions.102.eccentric
@@ -720,7 +720,7 @@ wbu_religious_decisions.103 = {
                 }
             }
         }
-        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_eccentric_poetry_modifier }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_eccentric }
     }
 
     after = {
