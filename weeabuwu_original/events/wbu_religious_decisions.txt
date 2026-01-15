@@ -110,6 +110,7 @@ wbu_religious_decisions.102 = {
             name = wbu_religious_decisions_102_choice
             value = flag:align
         }
+        custom_tooltip = wbu_religious_decisions.102.align_tooltip
     }
     option = {
         name = wbu_religious_decisions.102.oppose
@@ -118,6 +119,7 @@ wbu_religious_decisions.102 = {
             name = wbu_religious_decisions_102_choice
             value = flag:oppose
         }
+        custom_tooltip = wbu_religious_decisions.102.oppose_tooltip
     }
     after = {
         trigger_event = wbu_religious_decisions.103
@@ -127,7 +129,26 @@ wbu_religious_decisions.102 = {
 #reworked fourth event for "Design Fursona", where the player chooses an animal for their fursona based on their previous choice
 wbu_religious_decisions.103 = {
     title = wbu_religious_decisions.103.t
-    desc = wbu_religious_decisions.103.desc
+    desc = {
+        desc = wbu_religious_decisions.103.desc_0
+        desc = {
+            first_valid = {
+                triggered_desc = {
+                    trigger = {
+                        var:wbu_religious_decisions_102_choice = flag:align
+                    }
+                    desc = wbu_religious_decisions.103.desc_1a
+                }
+                triggered_desc = {
+                    trigger = {
+                        var:wbu_religious_decisions_102_choice = flag:oppose
+                    }
+                    desc = wbu_religious_decisions.103.desc_1b
+                }
+            }
+        }
+        desc = wbu_religious_decisions.103.desc_2
+    }
 
     #appearance of the event pop-up
     type = character_event #standard pop-up event, rather than a letter or a duel
@@ -141,7 +162,7 @@ wbu_religious_decisions.103 = {
 
     #options
     option = {
-        name = wbu_religious_decisions.103.greg
+        name = wbu_religious_decisions.103.gregarious
         trigger = {
             OR = {
                 AND = {

@@ -33,14 +33,60 @@
  wbu_religious_decisions.101.fire: "I will use ruddy and firely colors, like embers and autumn leaves."
  wbu_religious_decisions.101.sparkle: "I will use saturated and vibrant colors like the “Sparkledogs” of old."
 
- #third (and most painful) event for the "Design Fursona" decision
- wbu_religious_decisions.102.desc: "Now that I have chosen a pallet, I now should choose an animal to base my fursona on. There are countless animals to choose from, but some of them better resonate with my chosen identity and values. Another consideration: while most [ROOT.Char.GetFaith.GetAdherentNamePlural] choose an animal that aligns with their personality, some choose to foil themselves instead.""
- #note: I'm making the option localization the same as the modifiers' names for simplicity
+ #third event for the "Design Fursona" decision
  wbu_religious_decisions.102.t: "[$wbu_special_term_fursona$|U]: Animal Form"
+ wbu_religious_decisions.102.desc: "Now that I have chosen a pallet, I now should choose an animal on which to base my $wbu_special_term_fursona$. There are countless animals to choose from, but some of them will better resonate with my chosen identity and values.\n\nFirst, while most [ROOT.Char.GetFaith.GetAdherentNamePluralNoTooltip] choose an animal that aligns with their personality, I could choose something that foils, opposes, my personality instead."
+ wbu_religious_decisions.102.align: "I will choose an animal that reenforces my personality."
+ wbu_religious_decisions.102.align_tooltip: "#italic Options which correspond to each of your personality traits will be presented.#!"
+ wbu_religious_decisions.102.oppose: "I will choose an animal that foils my personality."
+ wbu_religious_decisions.102.oppose_tooltip: "#italic Options which correspond to the opposite or opposites of each of your personality traits will be presented.#!"
+
+ #fourth event for the "Design Fursona" decision
+ #note: I'm making the option localization imbed the modifiers' names for simplicity
+ wbu_religious_decisions.103.t: "$wbu_religious_decisions.102.t$"
+ wbu_religious_decisions.103.desc_0: "Given that I have chosen to "
+ wbu_religious_decisions.103.desc_1a: "emphasize" #multi-part conditional description
+ wbu_religious_decisions.103.desc_1b: "oppose"
+ wbu_religious_decisions.103.desc_2: "my personality, these animals are the best archetypes for me to choose from. Once this choice is made, my $wbu_special_term_fursona$ will be complete."
+ #note: option localization imbeds the modifiers' names for interlock
+ wbu_religious_decisions.103.ambitious: "The $wbu_partial_ambitious$, ."
+ wbu_religious_decisions.103.arbitrary: "The $wbu_partial_arbitrary$, ."
+ wbu_religious_decisions.103.arrogant: "The $wbu_partial_arrogant$, ."
+ wbu_religious_decisions.103.brave: "The $wbu_partial_brave$, ."
+ wbu_religious_decisions.103.callous: "The $wbu_partial_callous$, ."
+ wbu_religious_decisions.103.calm: "The $wbu_partial_calm$, ."
+ wbu_religious_decisions.103.chaste: "The $wbu_partial_chaste$, ."
+ wbu_religious_decisions.103.compassionate: "The $wbu_partial_compassionate$, ."
+ wbu_religious_decisions.103.content: "The $wbu_partial_content$, ."
+ wbu_religious_decisions.103.craven: "The $wbu_partial_craven$, ."
+ wbu_religious_decisions.103.cynical: "The $wbu_partial_cynical$, ."
+ wbu_religious_decisions.103.deceitful: "The $wbu_partial_deceitful$, ."
+ wbu_religious_decisions.103.diligent: "The $wbu_partial_diligent$, ."
+ wbu_religious_decisions.103.eccentric: "The $wbu_partial_eccentric$, ."
+ wbu_religious_decisions.103.fickle: "The $wbu_partial_fickle$, ."
+ wbu_religious_decisions.103.forgiving: "The $wbu_partial_forgiving$, ."
+ wbu_religious_decisions.103.generous: "The $wbu_partial_generous$, ."
+ wbu_religious_decisions.103.gluttonous: "The $wbu_partial_gluttonous$, ."
+ wbu_religious_decisions.103.greedy: "The $wbu_partial_greedy$, ."
+ wbu_religious_decisions.103.gregarious: "The $wbu_partial_gregarious$, ."
+ wbu_religious_decisions.103.honest: "The $wbu_partial_honest$, ."
+ wbu_religious_decisions.103.humble: "The $wbu_partial_humble$, ."
+ wbu_religious_decisions.103.impatient: "The $wbu_partial_impatient$, ."
+ wbu_religious_decisions.103.just: "The $wbu_partial_just$, ."
+ wbu_religious_decisions.103.lazy: "The $wbu_partial_lazy$, ."
+ wbu_religious_decisions.103.lustful: "The $wbu_partial_lustful$, ."
+ wbu_religious_decisions.103.paranoid: "The $wbu_partial_paranoid$, ."
+ wbu_religious_decisions.103.patient: "The $wbu_partial_patient$, ."
+ wbu_religious_decisions.103.sadistic: "The $wbu_partial_sadistic$, ."
+ wbu_religious_decisions.103.shy: "The $wbu_partial_shy$, ."
+ wbu_religious_decisions.103.stubborn: "The $wbu_partial_stubborn$, ."
+ wbu_religious_decisions.103.temperate: "The $wbu_partial_temperate$, ."
+ wbu_religious_decisions.103.trusting: "The $wbu_partial_trusting$, ."
+ wbu_religious_decisions.103.vengeful: "The $wbu_partial_vengeful$, ."
+ wbu_religious_decisions.103.wrathful: "The $wbu_partial_wrathful$, ."
+ wbu_religious_decisions.103.zealous: "The $wbu_partial_zealous$, ."
 
  #MODIFIERS
- #TODO: do this 36 times over for all the animal forms
-
  wbu_fursona_color_earth: "[$wbu_special_term_fursona$|U]: Earthy"
  wbu_fursona_color_snow: "[$wbu_special_term_fursona$|U]: Pastel and White"
  wbu_fursona_color_night: "[$wbu_special_term_fursona$|U]: Dark and Black"
