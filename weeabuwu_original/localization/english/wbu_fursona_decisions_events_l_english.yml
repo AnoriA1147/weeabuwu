@@ -16,6 +16,7 @@
  wbu_design_fursona_desc: "Since the age of [ROOT.Char.GetFaith.PantheonTerm], creating a furred form, a $wbu_special_term_fursona$, to represent onesself has been one of the central traditions. It is now time for me to engage in this holy act and create a $wbu_special_term_fursona$ of my own."
  wbu_design_fursona_confirm: "$wbu_design_fursona$" #this reuses the name key
  wbu_design_fursona_effect_tooltip: "You will have a chance to choose an animal and a color aspect to emphasise your identity and benefit your abilities."
+ wbu_design_fursona_age_tooltip: "As a child, your options may be more limited."
 
  #first event for the "Design Fursona" decision
  wbu_religious_decisions.100.t: "Designing a ['$wbu_special_term_fursona$'|U]"
@@ -86,6 +87,12 @@
  wbu_religious_decisions.103.wrathful: "The $wbu_partial_wrathful$, ."
  wbu_religious_decisions.103.zealous: "The $wbu_partial_zealous$, ."
 
+ wbu_religious_decisions.103.child_diplomacy: "The $wbu_partial_child_diplomacy$, ."
+ wbu_religious_decisions.103.child_martial: "The $wbu_partial_child_martial$, ."
+ wbu_religious_decisions.103.child_stewardship: "The $wbu_partial_child_stewardship$, ."
+ wbu_religious_decisions.103.child_intrigue: "The $wbu_partial_child_intrigue$, ."
+ wbu_religious_decisions.103.child_learning: "The $wbu_partial_child_learning$, ."
+
  #MODIFIERS
  wbu_fursona_color_earth: "['$wbu_special_term_fursona$'|U]: Earthy"
  wbu_fursona_color_snow: "['$wbu_special_term_fursona$'|U]: Pastel and White"
@@ -129,7 +136,13 @@
  wbu_fursona_animal_vengeful: "['$wbu_special_term_fursona$'|U]: $wbu_partial_vengeful$"
  wbu_fursona_animal_wrathful: "['$wbu_special_term_fursona$'|U]: $wbu_partial_wrathful$"
  wbu_fursona_animal_zealous: "['$wbu_special_term_fursona$'|U]: $wbu_partial_zealous$"
+ wbu_fursona_animal_child_diplomacy: "['$wbu_special_term_fursona$'|U]: $wbu_partial_child_diplomacy$"
+ wbu_fursona_animal_child_martial: "['$wbu_special_term_fursona$'|U]: $wbu_partial_child_martial$"
+ wbu_fursona_animal_child_stewardship: "['$wbu_special_term_fursona$'|U]: $wbu_partial_child_stewardship$"
+ wbu_fursona_animal_child_intrigue: "['$wbu_special_term_fursona$'|U]: $wbu_partial_child_intrigue$"
+ wbu_fursona_animal_child_learning: "['$wbu_special_term_fursona$'|U]: $wbu_partial_child_learning$"
 
+ #animal partials
  wbu_partial_ambitious: "Eagle"
  wbu_partial_arbitrary: "Cat"
  wbu_partial_arrogant: "Peacock"
@@ -166,3 +179,8 @@
  wbu_partial_vengeful: "Buffalo"
  wbu_partial_wrathful: "Goose"
  wbu_partial_zealous: "Ant"
+ wbu_partial_child_diplomacy: "Whelp"
+ wbu_partial_child_martial: "Bullock"
+ wbu_partial_child_stewardship: "Caterpillar"
+ wbu_partial_child_intrigue: "Cub"
+ wbu_partial_child_learning: "Chick"

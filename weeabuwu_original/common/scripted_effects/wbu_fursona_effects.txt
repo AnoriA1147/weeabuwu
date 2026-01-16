@@ -264,6 +264,36 @@ wbu_set_fursona_animal_effect = {
             }
             remove_character_modifier = wbu_fursona_animal_forgiving
         }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_fursona_animal_child_diplomacy
+            }
+            remove_character_modifier = wbu_fursona_animal_child_diplomacy
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_fursona_animal_child_martial
+            }
+            remove_character_modifier = wbu_fursona_animal_child_martial
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_fursona_animal_child_stewardship
+            }
+            remove_character_modifier = wbu_fursona_animal_child_stewardship
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_fursona_animal_child_intrigue
+            }
+            remove_character_modifier = wbu_fursona_animal_child_intrigue
+        }
+        else_if = {
+            limit = {
+                has_character_modifier = wbu_fursona_animal_child_learning
+            }
+            remove_character_modifier = wbu_fursona_animal_child_learning
+        }
     }
     else = {
 		# If no current bhakti, cost is reduced.

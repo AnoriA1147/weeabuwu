@@ -24,14 +24,17 @@ wbu_design_fursona = {
 	}
 
 	is_valid_showing_failures_only = {
-        is_at_war = no #must be at piece to design fursona
         age >= 6 #minimum for sense of self / for childhood traits
 	}
 
 	effect = {
         #a custom_tooltip effect is simply a localization that shows up in the effects list
 		custom_tooltip = wbu_design_fursona_effect_tooltip
-		trigger_event = wbu_religious_decisions.100
+		if = {
+            limit = { is_adult = no}
+            custom_tooltip = wbu_design_fursona_age_tooltip
+        }
+        trigger_event = wbu_religious_decisions.100
 	}
 
 	ai_check_interval = 60 #ai will check every N months, 0 means ai never checks

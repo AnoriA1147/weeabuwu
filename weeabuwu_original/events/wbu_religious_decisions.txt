@@ -744,6 +744,108 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_eccentric }
     }
 
+    #Childhood traits have two aligns and one oppse
+    option = {
+        name = wbu_religious_decisions.103.child_diplomacy
+        trigger = {
+            OR = {
+                AND = {
+                    has_trait = charming
+                    var:wbu_religious_decisions_102_choice = flag:align
+                }
+                AND = {
+                    has_trait = curious
+                    var:wbu_religious_decisions_102_choice = flag:align
+                }
+                AND = {
+                    has_trait = bossy
+                    var:wbu_religious_decisions_102_choice = flag:oppose
+                }
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_child_diplomacy }
+    }
+    option = {
+        name = wbu_religious_decisions.103.child_martial
+        trigger = {
+            OR = {
+                AND = {
+                    has_trait = bossy
+                    var:wbu_religious_decisions_102_choice = flag:align
+                }
+                AND = {
+                    has_trait = rowdy
+                    var:wbu_religious_decisions_102_choice = flag:align
+                }
+                AND = {
+                    has_trait = curious
+                    var:wbu_religious_decisions_102_choice = flag:oppose
+                }
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_child_martial }
+    }
+    option = {
+        name = wbu_religious_decisions.103.child_stewardship
+        trigger = {
+            OR = {
+                AND = {
+                    has_trait = bossy
+                    var:wbu_religious_decisions_102_choice = flag:align
+                }
+                AND = {
+                    has_trait = pensive
+                    var:wbu_religious_decisions_102_choice = flag:align
+                }
+                AND = {
+                    has_trait = charming
+                    var:wbu_religious_decisions_102_choice = flag:oppose
+                }
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_child_stewardship }
+    }
+    option = {
+        name = wbu_religious_decisions.103.child_intrigue
+        trigger = {
+            OR = {
+                AND = {
+                    has_trait = charming
+                    var:wbu_religious_decisions_102_choice = flag:align
+                }
+                AND = {
+                    has_trait = rowdy
+                    var:wbu_religious_decisions_102_choice = flag:align
+                }
+                AND = {
+                    has_trait = pensive
+                    var:wbu_religious_decisions_102_choice = flag:oppose
+                }
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_child_intrigue }
+    }
+    option = {
+        name = wbu_religious_decisions.103.child_learning
+        trigger = {
+            OR = {
+                AND = {
+                    has_trait = pensive
+                    var:wbu_religious_decisions_102_choice = flag:align
+                }
+                AND = {
+                    has_trait = curious
+                    var:wbu_religious_decisions_102_choice = flag:align
+                }
+                AND = {
+                    has_trait = rowdy
+                    var:wbu_religious_decisions_102_choice = flag:oppose
+                }
+            }
+        }
+        wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_child_learning }
+    }
+
     after = {
         add_piety = 100 #reward for completing the decision
         remove_variable = wbu_religious_decisions_102_choice

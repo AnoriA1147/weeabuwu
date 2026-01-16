@@ -413,3 +413,39 @@ wbu_fursona_animal_forgiving = {
 	prisoner_opinion = 10
 	minority_opinion = 10
 }
+
+wbu_fursona_animal_child_diplomacy = {
+    icon = cat_positive
+    diplomacy = 1
+    martial = -1
+    stewardship = -1
+}
+
+wbu_fursona_animal_child_martial = {
+    icon = cat_positive
+    martial = 1
+    diplomacy = -1
+    learning = -1
+}
+
+wbu_fursona_animal_child_stewardship = {
+    icon = cat_positive
+    stewardship = 1
+    intrigue = -1
+    diplomacy = -1
+
+}
+
+wbu_fursona_animal_child_intrigue = {
+    icon = cat_positive
+    intrigue = 1
+    stewardship = -1
+    learning = -1
+}
+
+wbu_fursona_animal_child_learning = {
+    icon = cat_positive
+    learning = 1
+    martial = -1
+    intrigue = -1
+}
