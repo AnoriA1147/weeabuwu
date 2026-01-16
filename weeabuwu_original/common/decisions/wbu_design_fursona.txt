@@ -20,10 +20,12 @@ wbu_design_fursona = {
 	cooldown = { years = 5 } #trying normal cooldown method rather than custom flag method
 
 	is_valid = {
+        is_at_war = no #must be at peace to design fursona
 	}
 
 	is_valid_showing_failures_only = {
         is_at_war = no #must be at piece to design fursona
+        age >= 6 #minimum for sense of self / for childhood traits
 	}
 
 	effect = {

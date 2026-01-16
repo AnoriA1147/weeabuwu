@@ -194,7 +194,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_shy }
     }
     option = {
-        name = wbu_religious_decisions.102.lustful
+        name = wbu_religious_decisions.103.lustful
         trigger = {
             OR = {
                 AND = {
@@ -210,7 +210,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_lustful }
     }
     option = {
-        name = wbu_religious_decisions.102.chaste
+        name = wbu_religious_decisions.103.chaste
         trigger = {
             OR = {
                 AND = {
@@ -226,7 +226,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_chaste }
     }
     option = {
-        name = wbu_religious_decisions.102.gluttonous
+        name = wbu_religious_decisions.103.gluttonous
         trigger = {
             OR = {
                 AND = {
@@ -242,7 +242,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_gluttonous }
     }
     option = {
-        name = wbu_religious_decisions.102.temperate
+        name = wbu_religious_decisions.103.temperate
         trigger = {
             OR = {
                 AND = {
@@ -258,7 +258,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_temperate }
     }
     option = {
-        name = wbu_religious_decisions.102.greedy
+        name = wbu_religious_decisions.103.greedy
         trigger = {
             OR = {
                 AND = {
@@ -274,7 +274,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_greedy }
     }
     option = {
-        name = wbu_religious_decisions.102.generous
+        name = wbu_religious_decisions.103.generous
         trigger = {
             OR = {
                 AND = {
@@ -290,7 +290,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_generous }
     }
     option = {
-        name = wbu_religious_decisions.102.lazy
+        name = wbu_religious_decisions.103.lazy
         trigger = {
             OR = {
                 AND = {
@@ -306,7 +306,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_lazy }
     }
     option = {
-        name = wbu_religious_decisions.102.diligent
+        name = wbu_religious_decisions.103.diligent
         trigger = {
             OR = {
                 AND = {
@@ -322,7 +322,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_diligent }
     }
     option = {
-        name = wbu_religious_decisions.102.wrathful
+        name = wbu_religious_decisions.103.wrathful
         trigger = {
             OR = {
                 AND = {
@@ -338,7 +338,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_wrathful }
     }
     option = {
-        name = wbu_religious_decisions.102.calm
+        name = wbu_religious_decisions.103.calm
         trigger = {
             OR = {
                 AND = {
@@ -354,7 +354,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_calm }
     }
     option = {
-        name = wbu_religious_decisions.102.patient
+        name = wbu_religious_decisions.103.patient
         trigger = {
             OR = {
                 AND = {
@@ -370,7 +370,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_patient }
     }
     option = {
-        name = wbu_religious_decisions.102.impatient
+        name = wbu_religious_decisions.103.impatient
         trigger = {
             OR = {
                 AND = {
@@ -386,7 +386,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_impatient }
     }
     option = {
-        name = wbu_religious_decisions.102.arrogant
+        name = wbu_religious_decisions.103.arrogant
         trigger = {
             OR = {
                 AND = {
@@ -402,7 +402,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_arrogant }
     }
     option = {
-        name = wbu_religious_decisions.102.humble
+        name = wbu_religious_decisions.103.humble
         trigger = {
             OR = {
                 AND = {
@@ -418,7 +418,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_humble }
     }
     option = {
-        name = wbu_religious_decisions.102.deceitful
+        name = wbu_religious_decisions.103.deceitful
         trigger = {
             OR = {
                 AND = {
@@ -434,7 +434,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_deceitful }
     }
     option = {
-        name = wbu_religious_decisions.102.honest
+        name = wbu_religious_decisions.103.honest
         trigger = {
             OR = {
                 AND = {
@@ -450,7 +450,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_honest }
     }
     option = {
-        name = wbu_religious_decisions.102.craven
+        name = wbu_religious_decisions.103.craven
         trigger = {
             OR = {
                 AND = {
@@ -466,7 +466,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_craven }
     }
     option = {
-        name = wbu_religious_decisions.102.brave
+        name = wbu_religious_decisions.103.brave
         trigger = {
             OR = {
                 AND = {
@@ -482,7 +482,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_brave }
     }
     option = {
-        name = wbu_religious_decisions.102.ambitious
+        name = wbu_religious_decisions.103.ambitious
         trigger = {
             OR = {
                 AND = {
@@ -498,7 +498,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_ambitious }
     }
     option = {
-        name = wbu_religious_decisions.102.content
+        name = wbu_religious_decisions.103.content
         trigger = {
             OR = {
                 AND = {
@@ -514,7 +514,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_content }
     }
     option = {
-        name = wbu_religious_decisions.102.arbitrary
+        name = wbu_religious_decisions.103.arbitrary
         trigger = {
             OR = {
                 AND = {
@@ -530,7 +530,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_arbitrary }
     }
     option = {
-        name = wbu_religious_decisions.102.just
+        name = wbu_religious_decisions.103.just
         trigger = {
             OR = {
                 AND = {
@@ -546,7 +546,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_just }
     }
     option = {
-        name = wbu_religious_decisions.102.cynical
+        name = wbu_religious_decisions.103.cynical
         trigger = {
             OR = {
                 AND = {
@@ -562,7 +562,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_cynical }
     }
     option = {
-        name = wbu_religious_decisions.102.zealous
+        name = wbu_religious_decisions.103.zealous
         trigger = {
             OR = {
                 AND = {
@@ -578,7 +578,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_zealous }
     }
     option = {
-        name = wbu_religious_decisions.102.paranoid
+        name = wbu_religious_decisions.103.paranoid
         trigger = {
             OR = {
                 AND = {
@@ -594,7 +594,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_paranoid }
     }
     option = {
-        name = wbu_religious_decisions.102.trusting
+        name = wbu_religious_decisions.103.trusting
         trigger = {
             OR = {
                 AND = {
@@ -610,7 +610,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_trusting }
     }
     option = {
-        name = wbu_religious_decisions.102.vengeful
+        name = wbu_religious_decisions.103.vengeful
         trigger = {
             OR = {
                 AND = {
@@ -626,7 +626,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_vengeful }
     }
     option = {
-        name = wbu_religious_decisions.102.forgiving
+        name = wbu_religious_decisions.103.forgiving
         trigger = {
             OR = {
                 AND = {
@@ -644,7 +644,7 @@ wbu_religious_decisions.103 = {
 
     #The triad traits break my system of pairs
     option = {
-        name = wbu_religious_decisions.102.compassionate
+        name = wbu_religious_decisions.103.compassionate
         trigger = {
             OR = {
                 AND = {
@@ -664,7 +664,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_compassionate }
     }
     option = {
-        name = wbu_religious_decisions.102.callous
+        name = wbu_religious_decisions.103.callous
         trigger = {
             OR = {
                 AND = {
@@ -680,7 +680,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_callous }
     }
     option = {
-        name = wbu_religious_decisions.102.sadistic
+        name = wbu_religious_decisions.103.sadistic
         trigger = {
             OR = {
                 AND = {
@@ -696,7 +696,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_sadistic }
     }
     option = {
-        name = wbu_religious_decisions.102.stubborn
+        name = wbu_religious_decisions.103.stubborn
         trigger = {
             OR = {
                 AND = {
@@ -712,7 +712,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_stubborn }
     }
     option = {
-        name = wbu_religious_decisions.102.fickle
+        name = wbu_religious_decisions.103.fickle
         trigger = {
             OR = {
                 AND = {
@@ -728,7 +728,7 @@ wbu_religious_decisions.103 = {
         wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_fickle }
     }
     option = {
-        name = wbu_religious_decisions.102.eccentric
+        name = wbu_religious_decisions.103.eccentric
         trigger = {
             OR = {
                 AND = {
