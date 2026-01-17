@@ -3,7 +3,6 @@
 #####
 #DESIGN FURSONA DECISION
 #####
-
 #first event for the "Design Fursona" decision (wbu_design_fursona), an immersive description and a simple continue vs back out option
 wbu_religious_decisions.100 = {
     title = wbu_religious_decisions.100.t

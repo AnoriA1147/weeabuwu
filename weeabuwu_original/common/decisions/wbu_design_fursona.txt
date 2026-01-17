@@ -21,6 +21,7 @@ wbu_design_fursona = {
 
 	is_valid = {
         is_at_war = no #must be at peace to design fursona
+        piety_level > 0
 	}
 
 	is_valid_showing_failures_only = {
@@ -44,6 +45,6 @@ wbu_design_fursona = {
 	}
 
 	ai_will_do = {
-		base = 100 # 100% chance the ai will not back out
+		base = 50
 	}
 }

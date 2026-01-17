@@ -7,21 +7,26 @@
 # l_korean:
 
  # Nickname for Count Vivienne of Oceanside, the starting crypto-furry character
- CHARACTER_ITSSELF: "itself"
  nick_wbu_the_mink: "the Mink"
  nick_wbu_the_mink_desc: "Though outwardly elegant and refined, [CHARACTER.GetShortUINameNoTooltipNoFormat|U] seems to hide some curious secret beneath [CharYourHerHis(CHARACTER)] polished exterior."
 
  #Two degug decisions to instantly convert
  wbu_debug_adopt_furry: "Adopt the Califurry Ways"
- wbu_debug_adopt_furry_tooltip: "\[DEBUG\] Convert yourself and your family to the Califurry faith."
+ wbu_debug_adopt_furry_tooltip: "DEBUG: Convert yourself and your family to the Califurry faith."
  wbu_debug_adopt_furry_desc: "Instantly embrace the $furry_adj$ lifestyle and convert to $furry$, along with your family."
  wbu_debug_adopt_furry_confirm: "Glory to $furry_skiltaire$!"
 
  wbu_debug_adopt_therian: "Adopt the Therian Ways"
- wbu_debug_adopt_therian_tooltip: "\[DEBUG\] Convert yourself and your family to the Therian faith."
+ wbu_debug_adopt_therian_tooltip: "DEBUG: Convert yourself and your family to the Therian faith."
  wbu_debug_adopt_therian_desc: "Instantly embrace the $therian_adj$ lifestyle and convert to $therian$, along with your family."
  wbu_debug_adopt_therian_confirm: "Glory to $therian_agrios$!"
 
  #Special term
  wbu_special_term_fursona: "fursona"
  wbu_special_term_fursona_plural: "fursonas"
+
+ #Generic terms
+ CHARACTER_ITSSELF: "itself"
+ masters: "masters"
+ ancestors: "ancestors"
+ fathers: "fathers"

@@ -20,7 +20,7 @@
 
  #first event for the "Design Fursona" decision
  wbu_religious_decisions.100.t: "Designing a ['$wbu_special_term_fursona$'|U]"
- wbu_religious_decisions.100.desc: "Designing a $wbu_special_term_fursona$ is a sacred act in the [ROOT.Char.GetFaith.GetAdjective] tradition. [$wbu_special_term_fursona_plural$|U] are supposed to bring comfort to the owner's identity, allowing one to live their life fuller and more authentically. It is an act that should be done with care, expression, and creativity."
+ wbu_religious_decisions.100.desc: "Designing a $wbu_special_term_fursona$ is a sacred act in the [ROOT.Char.GetFaith.GetAdjective] tradition. ['$wbu_special_term_fursona_plural$'|U] are supposed to bring comfort to the owner's identity, allowing one to live their life fuller and more authentically. It is an act that should be done with care, expression, and creativity."
  wbu_religious_decisions.100.go: "I pick up my pen and pigments."
  wbu_religious_decisions.100.optout: "$religious_decision.0101.optout$" #this reuses existing localization
  wbu_religious_decisions.100.optout_cooldown_warning_tooltip: "@alert_icon! You will not be able to take this decision again for another five years."
@@ -93,7 +93,11 @@
  wbu_religious_decisions.103.child_intrigue: "The $wbu_partial_child_intrigue$, ."
  wbu_religious_decisions.103.child_learning: "The $wbu_partial_child_learning$, ."
 
+
+
+ #####
  #MODIFIERS
+ #####
  wbu_fursona_color_earth: "['$wbu_special_term_fursona$'|U]: Earthy"
  wbu_fursona_color_snow: "['$wbu_special_term_fursona$'|U]: Pastel and White"
  wbu_fursona_color_night: "['$wbu_special_term_fursona$'|U]: Dark and Black"
@@ -153,7 +157,7 @@
  wbu_partial_compassionate: "Meerkat"
  wbu_partial_content: "Cow"
  wbu_partial_craven: "Chicken"
- wbu_partial_cynical: "Hound"
+ wbu_partial_cynical: "Cur"
  wbu_partial_deceitful: "Mink"
  wbu_partial_diligent: "Beaver"
  wbu_partial_eccentric: "Maned Wolf"

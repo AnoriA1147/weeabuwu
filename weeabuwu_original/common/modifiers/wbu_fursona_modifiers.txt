@@ -39,7 +39,7 @@ wbu_fursona_color_fire = {
 # Fursona animals
 #####
 # values entirely copied from compose_poetry's modifiers, make propietary later
-#TODO assign to animals, playtest, balance, make propietary
+#TODO playtest, balance, make propietary
 wbu_fursona_animal_lustful = {
 	icon = cat_positive
 	fertility = 0.15
