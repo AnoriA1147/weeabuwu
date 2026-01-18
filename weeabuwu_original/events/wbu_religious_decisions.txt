@@ -21,7 +21,13 @@ wbu_religious_decisions.100 = {
     #continue the decision
     option = {
         name = wbu_religious_decisions.100.go
-        trigger_event = wbu_religious_decisions.101
+        if = {
+            limit = { is_adult = no }
+            trigger_event = wbu_religious_decisions.102
+        }
+        else = {
+            trigger_event = wbu_religious_decisions.101 #skipped for children, too overpowered
+        }
     }
 
     #back out of the decision
@@ -34,6 +40,7 @@ wbu_religious_decisions.100 = {
 }
 
 #second event for "Design Fursona", where the player chooses a color aspect of their fursona
+#skipped for children
 wbu_religious_decisions.101 = {
     title = wbu_religious_decisions.101.t
     desc = wbu_religious_decisions.101.desc
@@ -83,7 +90,10 @@ wbu_religious_decisions.101 = {
     #after is a block of effects that happen after any option is chosen. Its counterpart is immediate.
     after = {
         add_piety = 100 #reward for completing this phase
-        trigger_event = wbu_religious_decisions.102
+        if = {
+            limit = { NOT = { has_character_flag = wbu_religious_decisions_105 } }
+            trigger_event = wbu_religious_decisions.102
+        }
     }
 }
 
@@ -848,5 +858,170 @@ wbu_religious_decisions.103 = {
     after = {
         add_piety = 100 #reward for completing the decision
         remove_variable = wbu_religious_decisions_102_choice
+    }
+}
+
+#.104 intentionally skipped
+#fursona event that triggers when a child which has a fursona becomes an adult
+wbu_religious_decisions.105 = {
+    title = wbu_religious_decisions.105.t
+    desc = wbu_religious_decisions.105.desc
+
+    #appearance of the event pop-up
+    type = character_event #standard pop-up event, rather than a letter or a duel
+    hidden = no
+    theme = faith
+    override_background = study
+    left_portrait = {
+        character = root
+        animation = writing #looks close enough to drawing
+    }
+
+    option = {
+        name = wbu_religious_decisions.105.generic #the character chooses a new fursona from scratch
+        trigger_event = wbu_religious_decisions.101
+    }
+    #these five mature a child_X trait only
+    option = {
+        name = wbu_religious_decisions.105.child_diplomacy
+        trigger = {
+            has_character_modifier = wbu_fursona_animal_child_diplomacy
+        }
+        random_list = {
+            pick = 1 #pick N choices, also unique = yes/no can pick X twice
+            25 = { #25 weight of picking this
+                wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_gregarious }
+            }
+            25 = { #avg 25/100 = 25%
+                wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_honest }
+            }
+            25 = {
+                wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_trusting }
+            }
+            25 = {
+                wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_compassionate }
+            }
+        }
+        add_character_flag = {
+            flag = wbu_religious_decisions_105 #this tells 101 to not trigger 102
+            days = 2 #SHOULD make the flag delete automatically
+        }
+        trigger_event = wbu_religious_decisions.101
+        piety = 100
+    }
+    option = {
+        name = wbu_religious_decisions.105.child_martial
+        trigger = {
+            has_character_modifier = wbu_fursona_animal_child_martial
+        }
+        random_list = {
+            pick = 1 #pick N choices, also unique = yes/no can pick X twice
+            25 = { #25 weight of picking this
+                wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_brave }
+            }
+            25 = { #avg 25/100 = 25%
+                wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_vengeful }
+            }
+            25 = {
+                wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_wrathful }
+            }
+            25 = {
+                wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_zealous }
+            }
+        }
+        add_character_flag = {
+            flag = wbu_religious_decisions_105 #this tells 101 to not trigger 102
+            days = 2 #SHOULD make the flag delete automatically
+        }
+        trigger_event = wbu_religious_decisions.101
+        piety = 100
+    }
+    option = {
+        name = wbu_religious_decisions.105.child_stewardship
+        trigger = {
+            has_character_modifier = wbu_fursona_animal_child_stewardship
+        }
+        random_list = {
+            pick = 1 #pick N choices, also unique = yes/no can pick X twice
+            25 = { #25 weight of picking this
+                wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_diligent }
+            }
+            25 = { #avg 25/100 = 25%
+                wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_ambitious }
+            }
+            25 = {
+                wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_temperate }
+            }
+            25 = {
+                wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_humble }
+            }
+        }
+        add_character_flag = {
+            flag = wbu_religious_decisions_105 #this tells 101 to not trigger 102
+            days = 2 #SHOULD make the flag delete automatically
+        }
+        trigger_event = wbu_religious_decisions.101
+        piety = 100
+    }
+    option = {
+        name = wbu_religious_decisions.105.child_intrigue
+        trigger = {
+            has_character_modifier = wbu_fursona_animal_child_intrigue
+        }
+        random_list = {
+            pick = 1 #pick N choices, also unique = yes/no can pick X twice
+            25 = { #25 weight of picking this
+                wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_lustful }
+            }
+            25 = { #avg 25/100 = 25%
+                wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_deceitful }
+            }
+            25 = {
+                wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_arbitrary }
+            }
+            25 = {
+                wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_fickle }
+            }
+        }
+        add_character_flag = {
+            flag = wbu_religious_decisions_105 #this tells 101 to not trigger 102
+            days = 2 #SHOULD make the flag delete automatically
+        }
+        trigger_event = wbu_religious_decisions.101
+        piety = 100
+    }
+    option = {
+        name = wbu_religious_decisions.105.child_learning
+        trigger = {
+            has_character_modifier = wbu_fursona_animal_child_learning
+        }
+        random_list = {
+            pick = 1 #pick N choices, also unique = yes/no can pick X twice
+            25 = { #25 weight of picking this
+                wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_chaste }
+            }
+            25 = { #avg 25/100 = 25%
+                wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_content }
+            }
+            25 = {
+                wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_just }
+            }
+            25 = {
+                wbu_set_fursona_animal_effect = { FURSONA_ANIMAL = wbu_fursona_animal_shy }
+            }
+        }
+        add_character_flag = {
+            flag = wbu_religious_decisions_105 #this tells 101 to not trigger 102
+            days = 2 #SHOULD make the flag delete automatically
+        }
+        trigger_event = wbu_religious_decisions.101
+        piety = 100
+    }
+    #basic optout
+    option = {
+        #the character skips this event to decide later
+        name = wbu_religious_decisions.105.optout
+        custom_tooltip = wbu_religious_decisions.105.optout_cooldown_warning_tooltip
+        ai_chance = { factor = 0 } #ai will never choose this option
     }
 }

@@ -1,0 +1,66 @@
+﻿#On Actions are scripts that execute every time a specific action is called by the game code (such as a child being born, a character inheriting land or using a hook).
+
+#This is an append, which can add an on_action to a pre-existing on_action.
+#Other types of block cannot be appended
+on_16th_birthday = {
+    on_actions = { #on_actions makes an on_action trigger another on_action
+        on_wbu_growing_up
+    }
+}
+
+on_wbu_growing_up = {
+    trigger = {
+        OR = {
+			root.faith = faith:furry
+			ate_foundational_faith_trigger = { FAITH = faith:furry }
+		}
+        OR = {
+            has_character_modifier = wbu_fursona_animal_ambitious
+            has_character_modifier = wbu_fursona_animal_arbitrary
+            has_character_modifier = wbu_fursona_animal_arrogant
+            has_character_modifier = wbu_fursona_animal_brave
+            has_character_modifier = wbu_fursona_animal_callous
+            has_character_modifier = wbu_fursona_animal_calm
+            has_character_modifier = wbu_fursona_animal_chaste
+            has_character_modifier = wbu_fursona_animal_compassionate
+            has_character_modifier = wbu_fursona_animal_content
+            has_character_modifier = wbu_fursona_animal_craven
+            has_character_modifier = wbu_fursona_animal_cynical
+            has_character_modifier = wbu_fursona_animal_deceitful
+            has_character_modifier = wbu_fursona_animal_diligent
+            has_character_modifier = wbu_fursona_animal_eccentric
+            has_character_modifier = wbu_fursona_animal_fickle
+            has_character_modifier = wbu_fursona_animal_forgiving
+            has_character_modifier = wbu_fursona_animal_generous
+            has_character_modifier = wbu_fursona_animal_gluttonous
+            has_character_modifier = wbu_fursona_animal_greedy
+            has_character_modifier = wbu_fursona_animal_gregarious
+            has_character_modifier = wbu_fursona_animal_honest
+            has_character_modifier = wbu_fursona_animal_humble
+            has_character_modifier = wbu_fursona_animal_impatient
+            has_character_modifier = wbu_fursona_animal_just
+            has_character_modifier = wbu_fursona_animal_lazy
+            has_character_modifier = wbu_fursona_animal_lustful
+            has_character_modifier = wbu_fursona_animal_paranoid
+            has_character_modifier = wbu_fursona_animal_patient
+            has_character_modifier = wbu_fursona_animal_sadistic
+            has_character_modifier = wbu_fursona_animal_shy
+            has_character_modifier = wbu_fursona_animal_stubborn
+            has_character_modifier = wbu_fursona_animal_temperate
+            has_character_modifier = wbu_fursona_animal_trusting
+            has_character_modifier = wbu_fursona_animal_vengeful
+            has_character_modifier = wbu_fursona_animal_wrathful
+            has_character_modifier = wbu_fursona_animal_zealous
+            has_character_modifier = wbu_fursona_animal_child_diplomacy
+            has_character_modifier = wbu_fursona_animal_child_martial
+            has_character_modifier = wbu_fursona_animal_child_stewardship
+            has_character_modifier = wbu_fursona_animal_child_intrigue
+            has_character_modifier = wbu_fursona_animal_child_learning
+        }
+    }
+
+    events = {
+        delay = { days = { 15 30 } } #so they player is not innundated with events
+        wbu_religious_decisions.105
+    }
+}

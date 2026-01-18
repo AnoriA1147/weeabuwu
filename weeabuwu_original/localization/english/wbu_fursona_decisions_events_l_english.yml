@@ -93,6 +93,18 @@
  wbu_religious_decisions.103.child_intrigue: "The $wbu_partial_child_intrigue$, ."
  wbu_religious_decisions.103.child_learning: "The $wbu_partial_child_learning$, ."
 
+ #growing up event for fursona-bearing children
+ wbu_religious_decisions.105.t: "['$wbu_special_term_fursona$'|U]: Growing Up"
+ wbu_religious_decisions.105.desc: "I have recently grown up and become a [ROOT.CHAR.GETWOMANMAN] of my own. Thus, the fursona which I created as a child might no longer fit my full personality. Is it time to create anew?"
+ wbu_religious_decisions.105.generic: "I will start from scratch."
+ wbu_religious_decisions.105.child_diplomacy: "My $wbu_partial_child_diplomacy$ will mature gracefully."
+ wbu_religious_decisions.105.child_martial: "My $wbu_partial_child_martial$ will mature boldly."
+ wbu_religious_decisions.105.child_stewardship: "My $wbu_partial_child_stewardship$ will spread its wings."
+ wbu_religious_decisions.105.child_intrigue: "My $wbu_partial_child_intrigue$ will mature with cunning."
+ wbu_religious_decisions.105.child_learning: "My $wbu_partial_child_learning$ will spread its wings."
+ wbu_religious_decisions.105.optout: "This will suffice for now."
+ wbu_religious_decisions.105.optout_cooldown_warning_tooltip: "@alert_icon! You will not be able to take this decision until the normal cooldown expires."
+
 
 
  #####
